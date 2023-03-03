@@ -1,6 +1,6 @@
 import React from "react";
 
-function Blog() {
+function Project() {
   return (
     <div>
       <h1>Blog Page</h1>
@@ -20,4 +20,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Project;
