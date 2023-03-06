@@ -73,4 +73,4 @@ the default bootstrap theme or an unstyled HTML site.
 
 #### GitHub
 
-* Update GitHub profile with pinned repositories featuring those same projects.
+https://tamarajoniec.github.io/React-Portfolio/

@@ -12,7 +12,7 @@ function ProjectGallery(props) {
       {/* Use a Bootstrap container to wrap the gallery */}
       <Row xs={1} sm={2} md={3} className="g-4">
         {/* Use a Bootstrap row to create a responsive grid of columns */}
-        {props.projects.map((project) => (
+        {props.projects ? props.projects.map((project) => (
           <Col key={project.id}>
             {/* Use a Bootstrap col for each project */}
             <div className="card h-100">
@@ -30,22 +30,22 @@ function ProjectGallery(props) {
               </div>
             </div>
           </Col>
-        ))}
+        )): ""}
       </Row>
     </Container>
 }
 
 
 // Define prop types for ProjectGallery component
-ProjectGallery.propTypes = {
-  projects: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      imageUrl: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};
+// ProjectGallery.propTypes = {
+//   projects: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       title: PropTypes.string.isRequired,
+//       description: PropTypes.string.isRequired,
+//       imageUrl: PropTypes.string.isRequired,
+//     })
+//   ).isRequired,
+// };
 
 export default ProjectGallery;
