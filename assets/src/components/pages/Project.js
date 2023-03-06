@@ -1,23 +1,73 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
-function Project() {
+function Project(props) {
+  const { projectId } = props.match.params; // Get the projectId from the router params
+  const project = props.projects.find((p) => p.id === projectId); // Find the project data by its ID
+
+  if (!project) {
+    // If the project does not exist, show a message
+    return (
+      <Container>
+        <h1>Project not found!</h1>
+        <p>Please select a valid project from the list.</p>
+      </Container>
+    );
+  }
+
+  const { title, deployedUrl, githubUrl, imageUrl } = project; // Destructure the project data for easier access
+
   return (
-    <div>
-      <h1>Project Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula. Curabitur pellentesque
-        turpis sit amet eros iaculis, a mollis arcu dictum. Ut vel ante eget massa ornare placerat.
-        Etiam nisl orci, finibus sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum
-        nunc, sed pretium risus rutrum eget. Nam consequat, ligula in faucibus vestibulum, nisi
-        justo laoreet risus, luctus luctus mi lacus sit amet libero. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Mauris pretium condimentum
-        tellus eget lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec
-        placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum in velit pellentesque
-        vehicula sit amet at augue. Maecenas aliquam bibendum congue. Pellentesque semper, lectus
-        non ullamcorper iaculis, est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
+    <Container>
+      {/* Use a Bootstrap container to wrap the project page */}
+      <h1>{title}</h1>
+      <Row>
+        <Col md={8}>
+          {/* Use a Bootstrap row and column to display the project information */}
+          <img src={imageUrl} alt={title} className="img-fluid mb-3" />
+          <p>
+            This project is deployed at{" "}
+            <a href={deployedUrl} target="_blank" rel="noopener noreferrer">
+              {deployedUrl}
+            </a>
+            .
+          </p>
+          <p>
+            The source code is available at{" "}
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              {githubUrl}
+            </a>
+            .
+          </p>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={4}>
+          <Link to="/">Back to projects</Link>
+        </Col>
+      </Row>
+    </Container>
   );
 }
+
+Project.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      imageUrl: PropTypes.string.isRequired,
+      deployedUrl: PropTypes.string.isRequired,
+      githubUrl: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      projectId: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
 
 export default Project;
