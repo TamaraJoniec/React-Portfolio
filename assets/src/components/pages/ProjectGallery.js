@@ -1,12 +1,12 @@
 // Import required modules
 import React from "react";
-import PropTypes from "prop-types";
 import { Col, Container, Row } from "react-bootstrap"; // Import the required Bootstrap components
+import projectsData from "../pages/ProjectsData";
 
 
 // Define project gallery component
 function ProjectGallery(props) {
-
+return (
   // Render project gallery grid
   <Container>
       {/* Use a Bootstrap container to wrap the gallery */}
@@ -32,20 +32,8 @@ function ProjectGallery(props) {
           </Col>
         )): ""}
       </Row>
-    </Container>
-}
-
-
-// Define prop types for ProjectGallery component
-// ProjectGallery.propTypes = {
-//   projects: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       title: PropTypes.string.isRequired,
-//       description: PropTypes.string.isRequired,
-//       imageUrl: PropTypes.string.isRequired,
-//     })
-//   ).isRequired,
-// };
+    </Container> 
+    );
+};
 
 export default ProjectGallery;

@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
+import projectsData from "../pages/ProjectsData";
 
 function Project(props) {
-  const { projectId } = props.match; // Get the projectId from the router params
+  const { projectId } = props.match.params; // Get the projectId from the router params
   const project = props.projects.find((p) => p.id === projectId); // Find the project data by its ID
 
   if (!project) {
@@ -52,22 +52,5 @@ function Project(props) {
   );
 }
 
-// Project.propTypes = {
-//   projects: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       title: PropTypes.string.isRequired,
-//       description: PropTypes.string.isRequired,
-//       imageUrl: PropTypes.string.isRequired,
-//       deployedUrl: PropTypes.string.isRequired,
-//       githubUrl: PropTypes.string.isRequired,
-//     })
-//   ).isRequired,
-//   match: PropTypes.shape({
-//     params: PropTypes.shape({
-//       projectId: PropTypes.string.isRequired,
-//     }).isRequired,
-//   }).isRequired,
-// };
 
 export default Project;
