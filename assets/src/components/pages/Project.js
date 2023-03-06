@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import projectsData from "../pages/ProjectsData";
+import ProjectGallery from "./ProjectGallery";
 
 function Project(props) {
   const { projectId } = props.match.params; // Get the projectId from the router params
@@ -17,7 +17,7 @@ function Project(props) {
     );
   }
 
-  const { title, deployedUrl, githubUrl, imageUrl } = project; // Destructure the project data for easier access
+  const { title, deployedUrl, githubUrl, imageUrl, description } = project; // Destructure the project data for easier access
 
   return (
     <Container>
@@ -27,6 +27,7 @@ function Project(props) {
         <Col md={8}>
           {/* Use a Bootstrap row and column to display the project information */}
           <img src={imageUrl} alt={title} className="img-fluid mb-3" />
+          <p>{description}</p>
           <p>
             This project is deployed at{" "}
             <a href={deployedUrl} target="_blank" rel="noopener noreferrer">
@@ -42,6 +43,9 @@ function Project(props) {
             .
           </p>
         </Col>
+        <Col md={4}>
+          <ProjectGallery projects={props.projects} />
+        </Col>
       </Row>
       <Row>
         <Col md={4}>
@@ -51,6 +55,5 @@ function Project(props) {
     </Container>
   );
 }
-
 
 export default Project;
