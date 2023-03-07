@@ -4,10 +4,10 @@ import ProjectGallery from './ProjectGallery';
 
 function Contact(props) {
   return (
-    <div className="contact-container">
-      <h1 className="text-center mb-5">Contact Me</h1>
+    <div className="contact-container my-5">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-lg-6 mb-5">
+          <h1 className="text-center mb-5">Contact me</h1>
           <h2>My Name</h2>
           <p>Tamara Joniec</p>
           <h2>Links</h2>
@@ -29,28 +29,23 @@ function Contact(props) {
             </li>
           </ul>
         </div>
-        <div className="container my-5">
-          {/* Contact form for handling events */}
-          <div className="row">
-            <div className="col-md-6">
-              <h2>Get in touch</h2>
-              <form>
-                <div className="form-group">
-                  <label htmlFor="name">Name</label>
-                  <input type="text" className="form-control" id="name" placeholder="Enter your name" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email address</label>
-                  <input type="email" className="form-control" id="email" placeholder="Enter your email" />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea className="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
-              </form>
+        <div className="col-lg-6 mb-5">
+          <h2>Get in touch</h2>
+          <form>
+            <div className="form-group mb-3">
+              <label htmlFor="name" className="form-label">Name</label>
+              <input type="text" className="form-control" id="name" placeholder="Enter your name" />
             </div>
-          </div>
+            <div className="form-group mb-3">
+              <label htmlFor="email" className="form-label">Email address</label>
+              <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+            </div>
+            <div className="form-group mb-3">
+              <label htmlFor="message" className="form-label">Message</label>
+              <textarea className="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" className="btn btn-primary">Submit</button>
+          </form>
         </div>
       </div>
     </div>
@@ -58,4 +53,3 @@ function Contact(props) {
 }
 
 export default Contact;
-

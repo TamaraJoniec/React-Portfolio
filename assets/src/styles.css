@@ -4,7 +4,8 @@
     --secondary-color: #ff4081;
     --background-color: #f5f5f5;
 }
-/* Navigation bar style */ 
+
+/* Navigation bar style */
 nav {
     display: flex;
     justify-content: space-between;
@@ -45,6 +46,7 @@ nav .active {
     background-color: #fff;
     color: #3f51b5;
 }
+
 /* Home page */
 .home-container {
     height: 100vh;
@@ -119,43 +121,59 @@ footer {
 
 /* Contact page */
 .contact-container {
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Creates columns with a minimum width of 400px and auto-fit to fill the available space */
+    grid-gap: 2rem;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+/* form element is then styled with padding, a white background, rounded corners, and a box shadow to make it stand out */
+.contact-container form {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  .contact-info {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact-container h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #3f51b5;
+  }
+
+.contact-container h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #3f51b5;
+  }
+
+.contact-container ul li {
     font-size: 20px;
-  }
-  
-  .contact-info h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    margin: 10px 0;
-  }
-  
-  a {
-  color: #333;
-  text-decoration: none;
-  font-size: 18px;
-  transition: all 0.2s ease-in-out;
-  }
-  
-  a:hover {
+    list-style: none;
+    padding-left: 0
+}
+
+.contact-container .btn-primary:focus {
+  box-shadow: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
     color: #006666;
-  }
+}
+
+  
+
+  
+
+  
+  
