@@ -1,34 +1,41 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import ProjectGallery from './ProjectGallery';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Contact(props) {
   return (
     <div className="contact-container my-5">
       <div className="row">
-        <div className="col-lg-6 mb-5">
-          <h1 className="text-center mb-5">Contact me</h1>
-          <h2>My Name</h2>
-          <p>Tamara Joniec</p>
-          <h2>Links</h2>
-          <ul className="list-unstyled mb-0">
+        <div className="contact-info text-white col-lg-6 mb-5">
+          <h1 className="display-4 mb-4">Contact info</h1>
+          <h2>Hello, I'm</h2>
+          <h1>Tamara Joniec</h1>
+          {/* React icons instead of text for the links */}
+          <h2 style={{ textAlign: 'center', fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}></h2>
+          <ul className="list-unstyled lead">
             <li className="my-2">
-              <a href="https://github.com/TamaraJoniec" className="text-decoration-none text-primary">
-                <i className="fab fa-github me-2"></i>GitHub Profile
+              <a href="https://github.com/TamaraJoniec" className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
+                <FontAwesomeIcon icon={faGithub} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}>GitHub Profile</span>
               </a>
             </li>
             <li className="my-2">
-              <a href="https://www.linkedin.com/in/tamara-joniec/" className="text-decoration-none text-primary">
-                <i className="fab fa-linkedin me-2"></i>LinkedIn Page
+              <a href="https://www.linkedin.com/in/tamara-joniec/" className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
+                <FontAwesomeIcon icon={faLinkedin} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}>LinkedIn Page</span>
               </a>
             </li>
             <li className="my-2">
-              <a href="https://tamarajoniec.github.io/Bootstrap-Portfolio/assets/images/WebdeveloperTamara_Joniec_Resume_2.pdf" download className="text-decoration-none text-primary">
-                <i className="fas fa-file-pdf me-2"></i>Download Resume (PDF)
+              <a href="https://tamarajoniec.github.io/Bootstrap-Portfolio/assets/images/WebdeveloperTamara_Joniec_Resume_2.pdf" download className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
+                <FontAwesomeIcon icon={faFilePdf} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}>Download Resume (PDF)</span>
               </a>
             </li>
           </ul>
+
+
+
         </div>
+        {/* Form */}
         <div className="col-lg-6 mb-5">
           <h2>Get in touch</h2>
           <form>

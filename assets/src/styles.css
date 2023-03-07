@@ -129,47 +129,55 @@ footer {
     align-items: center;
     margin-top: 100px;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #0e7afe, #9c36b5);
 }
+.contact-container .col-lg-6 {
+    padding: 0 2rem; /* add horizontal padding */
+    margin-bottom: 2rem;
+  }
+
+  .contact-info {
+    padding: 2rem; 
+  }
+  
 /* form element is then styled with padding, a white background, rounded corners, and a box shadow to make it stand out */
 .contact-container form {
     padding: 2rem;
     background-color: #fff;
     border-radius: 5px;
+    color:gray;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 .contact-container h1 {
     font-weight: 700;
-    font-size: 48px;
-    color: #3f51b5;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 2rem;
   }
 
 .contact-container h2 {
     font-weight: 700;
-    font-size: 24px;
     margin-top: 32px;
     margin-bottom: 16px;
-    color: #3f51b5;
+    margin-left: 2rem;
+    color: white;
   }
 
 .contact-container ul li {
     font-size: 20px;
     list-style: none;
-    padding-left: 0
+    padding-left: 0;
+    margin-left: 2rem;
+}
+.contact-container  p {
+    margin-left: 2rem;
+    font-size:1.5rem;
 }
 
 .contact-container .btn-primary:focus {
   box-shadow: none;
 }
-a {
-    color: #333;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.2s ease-in-out;
-}
 
-a:hover {
-    color: #006666;
-}
 
   
 
