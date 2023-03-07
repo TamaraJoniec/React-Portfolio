@@ -178,7 +178,57 @@ footer {
   box-shadow: none;
 }
 
-
+/* Buttons in Project Gallery */
+/* github buttons */
+.btn-github {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-github:hover {
+    color: #fff;
+    background-color: #2c2c2c;
+    border-color: #2c2c2c;
+  }
+  
+  .btn-github:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-container {
+    margin-top: auto;
+  }
+  
+  .btn-container > a {
+    margin-right: 10px;
+  }
+/* visit site buttons on project gallery page */
+  .btn-visit {
+    color: #fff;
+    background-color: #e31b6d;
+    border-color: #e31b6d;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  .btn-visit:hover {
+    color: #fff;
+    background-color: #c71560;
+    border-color: #c71560;
+  }
+  
+  .btn-visit:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(227, 27, 109, 0.5);
+  }
   
 
   

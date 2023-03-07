@@ -55,11 +55,11 @@ function Home() {
         <Row className="justify-content-center">
           {/* Project card 1 */}
           <Col md={4} className="text-center mb-4">
-            <a href="https://tamarajoniec.github.io/Daily-Planner/" target="_blank" rel="noopener noreferrer">
+            <a href="https://tamarajoniec.github.io/Daily-Planner/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
               <div className="project-card">
                 {/* Project card overlay with project title and description */}
                 <div className="project-card-overlay">
-                  <h5>Daily Planner</h5>
+                  <h5 className="project-title">Daily Planner</h5>
                 </div>
                 {/* Project image */}
                 <img src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Daily Planner" className="img-fluid" target="_blank" rel="noopener noreferrer" />
@@ -68,26 +68,24 @@ function Home() {
           </Col>
         {/* Project card 2 */}
     <Col md={4} className="text-center mb-4">
-    <a href="https://adeventastra.github.io/project1-piptambecten/" target="_blank" rel="noopener noreferrer">
-
+    <a href="https://adeventastra.github.io/project1-piptambecten/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
       <div className="project-card">
         {/* Project card overlay with project title and description */}
         <div className="project-card-overlay">
-          <h5>Daily Horoscope</h5>
+          <h5 className="project-title">Daily Horoscope</h5>
         </div>
         {/* Project image */}
         <img src="https://images.pexels.com/photos/8584226/pexels-photo-8584226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Horoscope" className="img-fluid" target="_blank" rel="noopener noreferrer" />
       </div>
       </a>
-
     </Col>
     {/* Project card 3 */}
     <Col md={4} className="text-center mb-4">
-    <a href="https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/" target="_blank" rel="noopener noreferrer">
+    <a href="https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
       <div className="project-card">
         {/* Project card overlay with project title and description */}
         <div className="project-card-overlay">
-          <h5>Weather Dashboard</h5>
+          <h5 className="project-title">Weather Dashboard</h5>
         </div>
         {/* Project image */}
         <img src="https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Weather Dashboard" className="img-fluid" target="_blank" rel="noopener noreferrer" />

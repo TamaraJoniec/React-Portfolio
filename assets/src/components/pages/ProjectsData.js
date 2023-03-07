@@ -18,7 +18,7 @@ const projectsData = [
     {
       id: "3",
       title: "Daily Planner",
-      description: "A simple calendar web app for scheduling your work day. Created using jQuery. ",
+      description: "A simple calendar web app for scheduling your work day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. ",
       imageUrl: "https://raw.githubusercontent.com/TamaraJoniec/Daily-Planner/main/assets/images/05-third-party-apis-homework-demo.png",
       deployedUrl: "https://tamarajoniec.github.io/Daily-Planner/",
       githubUrl: "https://github.com/TamaraJoniec/Daily-Planner",
@@ -26,7 +26,7 @@ const projectsData = [
     {
       id: "4",
       title: "Bootstrap Portfolio",
-      description: "A portfolio created using Bootstrap version 4. ",
+      description: "A portfolio created using Bootstrap. ",
       imageUrl: "https://github.com/TamaraJoniec/Bootstrap-Portfolio/raw/main/assets/images/screencapture.jpg",
       deployedUrl: "https://tamarajoniec.github.io/Bootstrap-Portfolio/",
       githubUrl: "https://github.com/TamaraJoniec/Bootstrap-Portfolio",
@@ -34,7 +34,7 @@ const projectsData = [
     {
       id: "5",
       title: "Furniture store",
-      description: "An online furniture store re-created. ",
+      description: "An online furniture store re-created using CSS Grids to build simple and skeletal layouts. ",
       imageUrl: "https://github.com/TamaraJoniec/Furniture-Website/raw/main/images/screencapture.jpg",
       deployedUrl: "https://tamarajoniec.github.io/Furniture-Website/",
       githubUrl: "https://github.com/TamaraJoniec/Furniture-Website",
