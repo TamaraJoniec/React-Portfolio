@@ -27,7 +27,7 @@ function ProjectGallery(props) {
                     {/* Use a Bootstrap card body to display the project title and description */}
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text">{project.description}</p>
-                    <a href={project.link} className="btn btn-primary">
+                    <a href={project.deployedUrl} className="btn btn-primary">
                       Visit Site
                     </a>
                   </div>
