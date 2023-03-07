@@ -4,32 +4,58 @@ import ProjectGallery from './ProjectGallery';
 
 function Contact(props) {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-      <Link to="Learn" role="button" className="btn btn-link">
-        Learn More
-      </Link>
-      <Link to="Contact" role="button" className="btn btn-link">
-        Learn Less
-      </Link>
-      <Routes>
-        <Route path="Project Gallery" element={<ProjectGallery />} />
-      </Routes>
+    <div className="contact-container">
+      <h1 className="text-center mb-5">Contact Me</h1>
+      <div className="row">
+        <div className="col-md-6">
+          <h2>My Name</h2>
+          <p>Tamara Joniec</p>
+          <h2>Links</h2>
+          <ul className="list-unstyled mb-0">
+            <li className="my-2">
+              <a href="https://github.com/TamaraJoniec" className="text-decoration-none text-primary">
+                <i className="fab fa-github me-2"></i>GitHub Profile
+              </a>
+            </li>
+            <li className="my-2">
+              <a href="https://www.linkedin.com/in/tamara-joniec/" className="text-decoration-none text-primary">
+                <i className="fab fa-linkedin me-2"></i>LinkedIn Page
+              </a>
+            </li>
+            <li className="my-2">
+              <a href="https://tamarajoniec.github.io/Bootstrap-Portfolio/assets/images/WebdeveloperTamara_Joniec_Resume_2.pdf" download className="text-decoration-none text-primary">
+                <i className="fas fa-file-pdf me-2"></i>Download Resume (PDF)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="container my-5">
+          {/* Contact form for handling events */}
+          <div className="row">
+            <div className="col-md-6">
+              <h2>Get in touch</h2>
+              <form>
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input type="text" className="form-control" id="name" placeholder="Enter your name" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email address</label>
+                  <input type="email" className="form-control" id="email" placeholder="Enter your email" />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message</label>
+                  <textarea className="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default Contact;
+
