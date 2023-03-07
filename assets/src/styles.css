@@ -179,7 +179,7 @@ footer {
 }
 
 /* Buttons in Project Gallery */
-/* github buttons */
+/* github nutto */
 .btn-github {
     color: #fff;
     background-color: #000;
@@ -216,7 +216,6 @@ footer {
     background-color: #e31b6d;
     border-color: #e31b6d;
     transition: all 0.3s ease-in-out;
-    
   }
   
   .btn-visit:hover {

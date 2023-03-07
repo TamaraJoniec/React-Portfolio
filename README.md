@@ -35,7 +35,7 @@ the default bootstrap theme or an unstyled HTML site.
 
 ### Requmyed Components
 
-* At a minium, my portfolio must render these 6 components:
+* At a minimum, my portfolio must render these 6 components:
   1. [ ] App
   2. [ ] Header
   4. [ ] Home
@@ -43,11 +43,11 @@ the default bootstrap theme or an unstyled HTML site.
   6. [ ] Project
   7. [ ] Contact
 
-### Requmyed Component Content
+### Required Component Content
 * [ ] App:
   * [ ] Must be my top level component and render all necessary children components
 * [ ] Header:
-   * [ ] Must be rendered across the entmye site
+   * [ ] Must be rendered across the entire site
    * [ ] Must Contain a Navbar
 * [ ] Project Gallery:
   * [ ] Must render dynamically 6 instances of the Project component
@@ -66,7 +66,7 @@ the default bootstrap theme or an unstyled HTML site.
 * [ ] Home:
   * This should be a welcome landing page that contains:
      * [ ] My Name
-     * [ ] A Headshot of I
+     * [ ] A Headshot of myself
      * [ ] My brand statement
      * [ ] Some indication that this is my portfolio site
 
