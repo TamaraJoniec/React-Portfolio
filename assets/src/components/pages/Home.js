@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 
 function Home() {
@@ -11,8 +12,14 @@ function Home() {
             <h1 className="text-center text-light mb-4">Welcome</h1>
             <h2 className="text-center text-light mb-5">Explore my portfolio and discover web design from my perspective.</h2>
             <div className="d-flex justify-content-center">
-              <button className="btn btn-lg btn-secondary mx-2">View Portfolio</button>
-              <button className="btn btn-lg btn-outline-light mx-2">Contact Me</button>
+              {/* Link to the project gallery */}
+              <Link to="/React-Portfolio/project-gallery/">
+                <button className="btn btn-lg btn-secondary mx-2">View Portfolio</button>
+              </Link>
+              {/* Link to the contact page */}
+              <Link to="/React-Portfolio/contact/">
+                <button className="btn btn-lg btn-outline-light mx-2">Contact Me</button>
+              </Link>
             </div>
           </Col>
         </Row>
@@ -37,6 +44,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      {/* Projects section */}
       <Container fluid className="bg-light py-5">
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
@@ -45,6 +53,7 @@ function Home() {
           </Col>
         </Row>
         <Row className="justify-content-center">
+          {/* Project card 1 */}
           <Col md={4} className="text-center mb-4">
             <div className="project-card">
               <div className="project-card-overlay">
@@ -54,6 +63,7 @@ function Home() {
               <img src="https://picsum.photos/400/300" alt="Project Title" className="img-fluid" />
             </div>
           </Col>
+          {/* Project card 2 */}
           <Col md={4} className="text-center mb-4">
             <div className="project-card">
               <div className="project-card-overlay">
@@ -63,6 +73,7 @@ function Home() {
               <img src="https://picsum.photos/400/300" alt="Project Title" className="img-fluid" />
             </div>
           </Col>
+          {/* Project card 3 */}
           <Col md={4} className="text-center mb-4">
             <div className="project-card">
               <div className="project-card-overlay">
