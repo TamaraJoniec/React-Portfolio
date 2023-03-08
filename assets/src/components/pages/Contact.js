@@ -16,17 +16,17 @@ function Contact(props) {
           <h2 style={{ textAlign: 'center', fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}></h2>
           <ul className="list-unstyled lead">
             <li className="my-2">
-              <a href="https://github.com/TamaraJoniec" className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
+              <a href="https://github.com/TamaraJoniec" target="_blank" className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
                 <FontAwesomeIcon icon={faGithub} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}>GitHub Profile</span>
               </a>
             </li>
             <li className="my-2">
-              <a href="https://www.linkedin.com/in/tamara-joniec/" className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
+              <a href="https://www.linkedin.com/in/tamara-joniec/" target="_blank" className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
                 <FontAwesomeIcon icon={faLinkedin} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}>LinkedIn Page</span>
               </a>
             </li>
             <li className="my-2">
-              <a href="https://tamarajoniec.github.io/Bootstrap-Portfolio/assets/images/WebdeveloperTamara_Joniec_Resume_2.pdf" download className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>
+              <a href="https://tamarajoniec.github.io/Bootstrap-Portfolio/assets/images/WebdeveloperTamara_Joniec_Resume_2.pdf" download className="text-decoration-none text-primary" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
                 <FontAwesomeIcon icon={faFilePdf} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}>Download Resume (PDF)</span>
               </a>
             </li>
