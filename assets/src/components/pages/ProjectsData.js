@@ -9,11 +9,11 @@ const projectsData = [
     },
     {
       id: "2",
-      title: "AdEvent Astra Horoscope",
-      description: "A horoscope web application with NASA images of space created using web APIs. ",
-      imageUrl: "https://raw.githubusercontent.com/AdEventAstra/project1-piptambecten/main/images/new-screenshot.jpg",
-      deployedUrl: "https://adeventastra.github.io/project1-piptambecten/",
-      githubUrl: "https://github.com/AdEventAstra/project1-piptambecten",
+      title: "Digital Drifters",
+      description: "Digital Drifters is a holiday booking website that allows users to research their flights directly from the website. It allows users to refine their search by city, date, and number of passengers. ",
+      imageUrl: "https://github.com/angistanzi/digital-drifters/blob/main/src/assets/demo.gif",
+      deployedUrl: "https://digital-drifters.netlify.app/",
+      githubUrl: "https://github.com/angistanzi/digital-drifters",
     },
     {
       id: "3",
