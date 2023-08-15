@@ -11,7 +11,7 @@ const projectsData = [
       id: "2",
       title: "Digital Drifters",
       description: "Digital Drifters is a holiday booking website that allows users to research their flights directly from the website. It allows users to refine their search by city, date, and number of passengers. ",
-      imageUrl: "https://raw.githubusercontent.com/angistanzi/digital-drifters/main/src/assets/demo.gifgi",
+      imageUrl: "https://raw.githubusercontent.com/angistanzi/digital-drifters/main/src/assets/demo.gif",
       deployedUrl: "https://digital-drifters.netlify.app/",
       githubUrl: "https://github.com/angistanzi/digital-drifters",
     },
