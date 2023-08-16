@@ -9,8 +9,8 @@ function Home() {
       <Container fluid className="gradient-background py-5">
         <Row className="justify-content-center align-items-center">
           <Col md={6}>
-            <h1 className="text-center text-light mb-4">Welcome</h1>
-            <h2 className="text-center text-light mb-5">Explore my portfolio and discover web design from my perspective.</h2>
+            <h1 className="text-center text-light mb-4">Hi, I'm Tamara :)</h1>
+            <h2 className="text-center text-light mb-5">Welcome, feel free to take a look around.</h2>
             <div className="d-flex justify-content-center">
               {/* Link to the project gallery */}
               <Link to="/React-Portfolio/project-gallery/">
@@ -27,19 +27,19 @@ function Home() {
       <Container className="py-5">
         <Row className="justify-content-center mb-5">
           <Col md={8} className="text-center">
-            <h3>What I Do</h3>
+            <h3 className="sub-heading">What I Do</h3>
             <p className="lead">I'm a web designer and developer based in the U.K. I create beautiful, responsive websites that look great on any device.</p>
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col md={4} className="text-center">
             <i className="bi bi-code-slash display-1 mb-4"></i>
-            <h4>Web Design</h4>
+            <h4 className="sub-heading">Web Design</h4>
             <p>I design beautiful and intuitive user interfaces that make websites easy to use and navigate.</p>
           </Col>
           <Col md={4} className="text-center">
             <i className="bi bi-laptop display-1 mb-4"></i>
-            <h4>Web Development</h4>
+            <h4 className="sub-heading">Web Development</h4>
             <p>I build responsive and fast-loading websites using modern web technologies like HTML, CSS, and JavaScript.</p>
           </Col>
         </Row>
@@ -48,8 +48,8 @@ function Home() {
       <Container fluid className="bg-light py-5">
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
-            <h3>Recent Projects</h3>
-            <p className="lead">Here are some of my recent projects. Click on a project to learn more about it.</p>
+            <h3 className="sub-heading">Recent Projects</h3>
+            <p className="lead">Here are some of my recent projects. Click to learn more.</p>
           </Col>
         </Row>
         <Row className="justify-content-center">

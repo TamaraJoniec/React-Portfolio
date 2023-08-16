@@ -1,7 +1,7 @@
 // Import required modules
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap"; // Import the required Bootstrap components
-import projectsData from "./ProjectsData";
+import ProjectsData from "./ProjectsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome icons
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons"; // Import FontAwesome icons
 

@@ -77,13 +77,16 @@ nav .active {
 }
 
 /* Use the primary color for headings */
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
     color: var(--primary-color);
+} */
+.sub-heading {
+  color: var(--primary-color);
 }
 
 /* Use the secondary color for buttons */
