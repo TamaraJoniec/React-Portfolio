@@ -18,14 +18,14 @@ nav {
 
 nav ul {
     display: flex;
-    list-style: none;
+align-items: right;    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav li {
+/* nav li {
     margin-left: 20px;
-}
+} */
 
 nav a {
     color: #fff;
@@ -48,8 +48,17 @@ nav .active {
 }
 
 /* Home page */
-.home-container {
-    height: 100vh;
+
+.slick-slider {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 100vh;
+  width: 100%;
+}
+
+.slick-slide {
+  height: 100%;
 }
 
 .gradient-background {
@@ -77,14 +86,12 @@ nav .active {
 }
 
 /* Use the primary color for headings */
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--primary-color);
-} */
+h1 {
+  display:block;
+  justify-content: center;
+  align-items: end;
+  position: static !important
+}
 .sub-heading {
   color: var(--primary-color);
 }

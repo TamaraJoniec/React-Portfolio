@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-
+import Slider from 'react-slick';
 
 function Home() {
   return (
-    <div className="home-container">
-      <Container fluid className="gradient-background py-5">
-        <Row className="justify-content-center align-items-center">
-          <Col md={6}>
-            <h1 className="text-center text-light mb-4">Hi, I'm Tamara :)</h1>
+    
+    <div>
+      <Slider vertical={true} arrows={false} verticalSwiping={true} className="gradient-background py-5">
+       
+            <h1 className="text-center text-light mb-4">Hi, I'm Tamara.</h1>
             <h2 className="text-center text-light mb-5">Welcome, feel free to take a look around.</h2>
             <div className="d-flex justify-content-center">
               {/* Link to the project gallery */}
@@ -21,9 +21,8 @@ function Home() {
                 <button className="btn btn-lg btn-outline-light mx-2">Contact Me</button>
               </Link>
             </div>
-          </Col>
-        </Row>
-      </Container>
+        
+      </Slider>
       <Container className="py-5">
         <Row className="justify-content-center mb-5">
           <Col md={8} className="text-center">
