@@ -25,11 +25,11 @@ const projectsData = [
     },
     {
       id: "4",
-      title: "Clicky Game",
+      title: "Bootstrap Portfolio",
       description: "A portfolio created using Bootstrap. ",
-      imageUrl: "images/Screenshot.png",
-      deployedUrl: "https://clicky-game.netlify.app/",
-      githubUrl: "https://github.com/TamaraJoniec/memory-game",
+      imageUrl: "https://github.com/TamaraJoniec/Bootstrap-Portfolio/raw/main/assets/images/screencapture.png",
+      deployedUrl: "https://tamarajoniec.github.io/Bootstrap-Portfolio/",
+      githubUrl: "https://github.com/TamaraJoniec/Bootstrap-Portfolio",
     },
     {
       id: "5",
