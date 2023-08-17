@@ -19,7 +19,7 @@ const projectsData = [
       id: "3",
       title: "Clicky-game",
       description: "Clicky Game is a memory-challenging game built with React. The primary aim of the game is to test and enhance your memory. Click on an image to earn points, but be careful not to click on any image more than once!",
-      imageUrl: "https://github.com/TamaraJoniec/memory-game/blob/main/src/Screenshot.png",
+      imageUrl: "https://github.com/TamaraJoniec/memory-game/raw/main/src/Screenshot.png",
       deployedUrl: "https://clicky-game.netlify.app/",
       githubUrl: "https://github.com/TamaraJoniec/memory-game",
     },
