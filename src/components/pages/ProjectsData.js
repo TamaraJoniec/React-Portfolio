@@ -43,7 +43,7 @@ const projectsData = [
       id: "6",
       title: "Marketing agency",
       description: "Scouting and refactoring code from a marketing agency website. ",
-      imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/blob/main/assets/images/01-html-css-git-challenge-demo.jpeg",
+      imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/raw/main/assets/images/01-html-css-git-challenge-demo.jpeg",
       deployedUrl: "https://tamarajoniec.github.io/Code-Refactor/",
       githubUrl: "https://github.com/TamaraJoniec/Code-Refactor",
     },
