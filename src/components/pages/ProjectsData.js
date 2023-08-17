@@ -1,6 +1,6 @@
 const projectsData = [
     {
-     
+      id: "1",
       title: "Clicky-game",
       description: "Clicky Game is a memory-challenging game built with React. The primary aim of the game is to test and enhance your memory. Click on an image to earn points, but be careful not to click on any image more than once!",
       imageUrl: "https://github.com/TamaraJoniec/memory-game/raw/main/src/Screenshot.png",
@@ -17,7 +17,6 @@ const projectsData = [
     },
     {
       id: "3",
-      id: "1",
       title: "Weather Dashboard",
       description: "A weather dashboard with form inputs, where a user searches for a city and they are presented with current and future conditions for that city.",
       imageUrl: "https://raw.githubusercontent.com/TamaraJoniec/Server-APIs-Weather-Dashboard/main/assets/images/10-server-side-apis-challenge-demo.png",
