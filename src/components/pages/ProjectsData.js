@@ -17,11 +17,11 @@ const projectsData = [
     },
     {
       id: "3",
-      title: "Daily Planner",
-      description: "A simple calendar web app for scheduling your work day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery. ",
-      imageUrl: "https://raw.githubusercontent.com/TamaraJoniec/Daily-Planner/main/assets/images/05-third-party-apis-homework-demo.png",
-      deployedUrl: "https://tamarajoniec.github.io/Daily-Planner/",
-      githubUrl: "https://github.com/TamaraJoniec/Daily-Planner",
+      title: "Clicky-game",
+      description: "Clicky Game is a memory-challenging game built with React. The primary aim of the game is to test and enhance your memory. Click on an image to earn points, but be careful not to click on any image more than once!",
+      imageUrl: "https://github.com/TamaraJoniec/memory-game/blob/main/src/Screenshot.png",
+      deployedUrl: "https://clicky-game.netlify.app/",
+      githubUrl: "https://github.com/TamaraJoniec/memory-game",
     },
     {
       id: "4",
