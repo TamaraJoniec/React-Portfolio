@@ -14,7 +14,7 @@ function App() {
       <div>
         <NavTabs />
         {/* Wrap Route elements in a Routes component */}
-        <Routes basename="/">
+        <Routes basename="/React-Portfolio/">
           {/* Define routes using the Route component to render different page components at different paths */}
           {/* Define a default route that will render the Home component */}
           <Route path="/React-Portfolio/" element={<Home />} />

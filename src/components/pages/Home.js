@@ -10,8 +10,8 @@ function Home() {
         <Row className="justify-content-center align-items-center">
           <Col md={6}>
             <h1 className="text-center text-light mb-4">Hi, I'm Tamara :)</h1>
-            <h2 className="text-center text-light mb-5">Welcome, feel free to take a look around.</h2>
-            <div className="d-flex justify-content-center">
+            <h2 className="text-center text-light mb-5">I'm a web developer based in the U.K.</h2>
+            <div className="d-flex justify-content-center nav">
               {/* Link to the project gallery */}
               <Link to="/React-Portfolio/project-gallery/">
                 <button className="btn btn-lg btn-secondary mx-2">View Portfolio</button>
@@ -27,19 +27,19 @@ function Home() {
       <Container className="py-5">
         <Row className="justify-content-center mb-5">
           <Col md={8} className="text-center">
-            <h3 className="sub-heading">What I Do</h3>
+            <h3 className='subHeading'>What I Do</h3>
             <p className="lead">I'm a web designer and developer based in the U.K. I create beautiful, responsive websites that look great on any device.</p>
           </Col>
         </Row>
         <Row className="justify-content-center">
           <Col md={4} className="text-center">
             <i className="bi bi-code-slash display-1 mb-4"></i>
-            <h4 className="sub-heading">Web Design</h4>
+            <h4 className='subHeading'>Web Design</h4>
             <p>I design beautiful and intuitive user interfaces that make websites easy to use and navigate.</p>
           </Col>
           <Col md={4} className="text-center">
             <i className="bi bi-laptop display-1 mb-4"></i>
-            <h4 className="sub-heading">Web Development</h4>
+            <h4 className='subHeading'>Web Development</h4>
             <p>I build responsive and fast-loading websites using modern web technologies like HTML, CSS, and JavaScript.</p>
           </Col>
         </Row>
@@ -48,8 +48,8 @@ function Home() {
       <Container fluid className="bg-light py-5">
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
-            <h3 className="sub-heading">Recent Projects</h3>
-            <p className="lead">Here are some of my recent projects. Click to learn more.</p>
+            <h3 className='subHeading'>Recent Projects</h3>
+            <p className="lead">Here are some of my recent projects. Click on a project to learn more about it.</p>
           </Col>
         </Row>
         <Row className="justify-content-center">
@@ -59,7 +59,7 @@ function Home() {
               <div className="project-card">
                 {/* Project card overlay with project title and description */}
                 <div className="project-card-overlay">
-                  <h5 className="project-title">Daily Planner</h5>
+                  <h5 className='subHeading'>Daily Planner</h5>
                 </div>
                 {/* Project image */}
                 <img src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Daily Planner" className="img-fluid" target="_blank" rel="noopener noreferrer" />
@@ -72,7 +72,7 @@ function Home() {
       <div className="project-card">
         {/* Project card overlay with project title and description */}
         <div className="project-card-overlay">
-          <h5 className="project-title">Daily Horoscope</h5>
+          <h5 className='subHeading'>Daily Horoscope</h5>
         </div>
         {/* Project image */}
         <img src="https://images.pexels.com/photos/8584226/pexels-photo-8584226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Horoscope" className="img-fluid" target="_blank" rel="noopener noreferrer" />
@@ -85,7 +85,7 @@ function Home() {
       <div className="project-card">
         {/* Project card overlay with project title and description */}
         <div className="project-card-overlay">
-          <h5 className="project-title">Weather Dashboard</h5>
+          <h5 className='subHeading'>Weather Dashboard</h5>
         </div>
         {/* Project image */}
         <img src="https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Weather Dashboard" className="img-fluid" target="_blank" rel="noopener noreferrer" />
