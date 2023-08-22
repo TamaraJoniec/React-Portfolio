@@ -31,14 +31,14 @@ const projectsData = [
       deployedUrl: "https://tamarajoniec.github.io/Code-Refactor/",
       githubUrl: "https://github.com/TamaraJoniec/Code-Refactor",
     },
-    {
-      id: "4",
-      title: "Furniture store",
-      description: "An online furniture store re-created using CSS Grids to build simple and skeletal layouts. ",
-      imageUrl: "https://github.com/TamaraJoniec/Furniture-Website/raw/main/images/screencapture.jpg",
-      deployedUrl: "https://tamarajoniec.github.io/Furniture-Website/",
-      githubUrl: "https://github.com/TamaraJoniec/Furniture-Website",
-    },
+    // {
+    //   id: "4",
+    //   title: "Furniture store",
+    //   description: "An online furniture store re-created using CSS Grids to build simple and skeletal layouts. ",
+    //   imageUrl: "https://github.com/TamaraJoniec/Furniture-Website/raw/main/images/screencapture.jpg",
+    //   deployedUrl: "https://tamarajoniec.github.io/Furniture-Website/",
+    //   githubUrl: "https://github.com/TamaraJoniec/Furniture-Website",
+    // },
     // {
     //   id: "6",
     //   title: "Marketing agency",

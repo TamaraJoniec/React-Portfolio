@@ -9,13 +9,12 @@
 
 .navbar ul {
     display: flex;
-    position: absolute;
+    position: relative;
     left: 70%;
     list-style: none;
     margin: 0;
     padding: 0;
-    opacity: 0;
-
+    
 }
 .navbar a {
   color: var(--primary-color);
@@ -41,7 +40,7 @@
 
 /* Home page */
 .home-container {
-    height: 400px;
+    height: 100vh;
 }
 
 .gradient-background {
