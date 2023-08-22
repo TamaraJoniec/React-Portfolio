@@ -15,16 +15,16 @@ const projectsData = [
       deployedUrl: "https://digital-drifters.netlify.app/",
       githubUrl: "https://github.com/angistanzi/digital-drifters",
     },
+    // {
+    //   id: "3",
+    //   title: "Weather Dashboard",
+    //   description: "A weather dashboard with form inputs, where a user searches for a city and they are presented with current and future conditions for that city.",
+    //   imageUrl: "https://raw.githubusercontent.com/TamaraJoniec/Server-APIs-Weather-Dashboard/main/assets/images/10-server-side-apis-challenge-demo.png",
+    //   deployedUrl: "https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/",
+    //   githubUrl: "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard",
+    // },
     {
       id: "3",
-      title: "Weather Dashboard",
-      description: "A weather dashboard with form inputs, where a user searches for a city and they are presented with current and future conditions for that city.",
-      imageUrl: "https://raw.githubusercontent.com/TamaraJoniec/Server-APIs-Weather-Dashboard/main/assets/images/10-server-side-apis-challenge-demo.png",
-      deployedUrl: "https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/",
-      githubUrl: "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard",
-    },
-    {
-      id: "4",
       title: "Marketing agency",
       description: "Scouting and refactoring code from a marketing agency website. ",
       imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/raw/main/assets/images/01-html-css-git-challenge-demo.jpeg",
@@ -32,7 +32,7 @@ const projectsData = [
       githubUrl: "https://github.com/TamaraJoniec/Code-Refactor",
     },
     {
-      id: "5",
+      id: "4",
       title: "Furniture store",
       description: "An online furniture store re-created using CSS Grids to build simple and skeletal layouts. ",
       imageUrl: "https://github.com/TamaraJoniec/Furniture-Website/raw/main/images/screencapture.jpg",
