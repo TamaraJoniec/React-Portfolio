@@ -68,20 +68,20 @@ function Home() {
           </Col>
         {/* Project card 2 */}
     <Col md={4} className="text-center mb-4">
-    <a href="https://adeventastra.github.io/project1-piptambecten/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+    <a href="https://clicky-game.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
       <div className="project-card">
         {/* Project card overlay with project title and description */}
         <div className="project-card-overlay">
-          <h5 className='subHeading'>Daily Horoscope</h5>
+          <h5 className='subHeading'>Clicky Game</h5>
         </div>
         {/* Project image */}
-        <img src="https://images.pexels.com/photos/8584226/pexels-photo-8584226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Horoscope" className="img-fluid" target="_blank" rel="noopener noreferrer" />
+        <img src="https://github.com/TamaraJoniec/memory-game/raw/main/src/Screenshot.png" alt="Clicky Game" className="img-fluid" target="_blank" rel="noopener noreferrer" />
       </div>
       </a>
     </Col>
     {/* Project card 3 */}
     <Col md={4} className="text-center mb-4">
-    <a href="https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+    <a href="https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/" className="img-fluid" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
       <div className="project-card">
         {/* Project card overlay with project title and description */}
         <div className="project-card-overlay">
