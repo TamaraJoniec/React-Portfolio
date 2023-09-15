@@ -1,70 +1,102 @@
 /* Define a color palette */
 :root {
-    --primary-color: #3f51b5;
-    --secondary-color: #ff4081;
-    --background-color: #f5f5f5;
+  --primary-color: #3f51b5;
+  --secondary-color: #ff4081;
+  --background-color: #f5f5f5;
 }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 
 /* Navigation bar style */
 
 .navbar ul {
-    display: flex;
-    position: relative;
-    left: 70%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
+  display: flex;
+  position: relative;
+  left: 70%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
+
 .navbar a {
   color: var(--primary-color);
 }
+
 .navbar.item {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    transition: 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #fff;
-    color: var(--secondary-color);
+  background-color: #fff;
+  color: var(--secondary-color);
 }
+
 .nav-tabs .nav-link.active {
   color: gray;
 }
+
 .nav-link.active {
-    background-color: #fff;
-    color: var( --primary-color);
+  background-color: #fff;
+  color: var(--primary-color);
 }
 
 /* Home page */
 .home-container {
-    height: 100vh;
+  height: 100vh;
+  position: relative;
+  /* Ensure it's positioned */
+  z-index: 1;
+  /* Ensure it's above the gradient */
+  background-color: #fff;
+  /* Set a solid background color */
 }
 
-.gradient-background {
-    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+.home-container::before {
+  content: "";
+  background: linear-gradient(to bottom,
+      transparent,
+      var(--primary-color),
+      var(--secondary-color),
+      transparent);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* This ensures the gradient is behind the content of .home-container */
 }
+
 
 .btn-secondary {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .btn-secondary:hover {
-    background-color: #fff;
-    color: var(--secondary-color);
+  background-color: #fff;
+  color: var(--secondary-color);
 }
 
 .btn-outline-light {
-    color: #fff;
-    border-color: #fff;
+  color: #fff;
+  border-color: #fff;
 }
 
 .btn-outline-light:hover {
-    background-color: #fff;
-    color: var(--secondary-color);
+  background-color: #fff;
+  color: var(--secondary-color);
 }
 
 /* Use the primary color for headings */
@@ -75,90 +107,95 @@
 
 /* Use the secondary color for buttons */
 button {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Add more whitespace around elements */
 header {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* Use modern fonts */
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Add a gradient background to the header */
 header {
-    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-    color: white;
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+  color: white;
 }
 
 /* Simplify the design */
 footer {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 /* Contact page */
 .contact-container {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Creates columns with a minimum width of 400px and auto-fit to fill the available space */
-    grid-gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom right, #0e7afe, #9c36b5);
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* Creates columns with a minimum width of 400px and auto-fit to fill the available space */
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom right, #0e7afe, #9c36b5);
 }
-.contact-container .col-lg-6 {
-    padding: 0 2rem; /* add horizontal padding */
-    margin-bottom: 2rem;
-  }
 
-  .contact-info {
-    padding: 2rem; 
-  }
-  
+.contact-container .col-lg-6 {
+  padding: 0 2rem;
+  /* add horizontal padding */
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  padding: 2rem;
+}
+
 /* form element is then styled with padding, a white background, rounded corners, and a box shadow to make it stand out */
 .contact-container form {
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 5px;
-    color:gray;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  color: gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .contact-container h1 {
-    font-weight: 700;
-    color: white;
-    margin-top: 2rem;
-    margin-left: 2rem;
-  }
+  font-weight: 700;
+  color: white;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
 
 .contact-container h2 {
-    font-weight: 700;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    margin-left: 2rem;
-    color: white;
-  }
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-left: 2rem;
+  color: white;
+}
 
 .contact-container ul li {
-    font-size: 20px;
-    list-style: none;
-    padding-left: 0;
-    margin-left: 2rem;
+  font-size: 20px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 2rem;
 }
-.contact-container  p {
-    margin-left: 2rem;
-    font-size:1.5rem;
+
+.contact-container p {
+  margin-left: 2rem;
+  font-size: 1.5rem;
 }
 
 .contact-container .btn-primary:focus {
@@ -168,56 +205,51 @@ footer {
 /* Buttons in Project Gallery */
 /* github nutto */
 .btn-github {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-github:hover {
-    color: #fff;
-    background-color: #2c2c2c;
-    border-color: #2c2c2c;
-  }
-  
-  .btn-github:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .btn-container {
-    margin-top: auto;
-  }
-  
-  .btn-container > a {
-    margin-right: 10px;
-  }
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-github:hover {
+  color: #fff;
+  background-color: #2c2c2c;
+  border-color: #2c2c2c;
+}
+
+.btn-github:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container {
+  margin-top: auto;
+}
+
+.btn-container>a {
+  margin-right: 10px;
+}
+
 /* visit site buttons on project gallery page */
-  .btn-visit {
-    color: #fff;
-    background-color: #e31b6d;
-    border-color: #e31b6d;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-visit:hover {
-    color: #fff;
-    background-color: #c71560;
-    border-color: #c71560;
-  }
-  
-  .btn-visit:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(227, 27, 109, 0.5);
-  }
-  
+.btn-visit {
+  color: #fff;
+  background-color: #e31b6d;
+  border-color: #e31b6d;
+  transition: all 0.3s ease-in-out;
+}
 
-  
+.btn-visit:hover {
+  color: #fff;
+  background-color: #c71560;
+  border-color: #c71560;
+}
 
-  
-  
+.btn-visit:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(227, 27, 109, 0.5);
+}

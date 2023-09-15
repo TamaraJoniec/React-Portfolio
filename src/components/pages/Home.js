@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="home-container">
-      <Container fluid className="gradient-background py-5">
+      <Container fluid className="py-5">
         <Row className="justify-content-center align-items-center">
           <Col md={6}>
             <h1 className="text-center text-light mb-4">Hi, I'm Tamara :)</h1>
