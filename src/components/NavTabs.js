@@ -1,8 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function NavTabs() {
   const [navOpen, setNavOpen] = useState(false);
+  const menuRef = useRef(); // This will hold the reference to your menu
+
+  useEffect(() => {
+    if (window.location.pathname === "/React-Portfolio/#about") { // Only for the About page
+      const handleOutsideClick = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+          setNavOpen(false);
+        }
+      };
+
+      // Attach the listener to the document
+      document.addEventListener("click", handleOutsideClick);
+
+      // Cleanup the listener when the component is unmounted
+      return () => {
+        document.removeEventListener("click", handleOutsideClick);
+      };
+    }
+    
+  }, []);
 
   return (
     <div className="navbar">
