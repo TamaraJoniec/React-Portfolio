@@ -39,14 +39,14 @@ const projectsData = [
       deployedUrl: "https://tamarajoniec.github.io/Furniture-Website/",
       githubUrl: "https://github.com/TamaraJoniec/Furniture-Website",
     },
-    // {
-    //   id: "6",
-    //   title: "Password generator",
-    //   description: "Scouting and refactoring code from a marketing agency website. ",
-    //   imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/raw/main/assets/images/01-html-css-git-challenge-demo.jpeg",
-    //   deployedUrl: "https://tamarajoniec.github.io/Password-Generator/",
-    //   githubUrl: "https://github.com/TamaraJoniec/Code-Refactor",
-    // },
+    {
+      id: "6",
+      title: "Password generator",
+      description: "App to generate a random password based on user-selected criteria. ",
+      imageUrl: "https://github.com/TamaraJoniec/Password-Generator/raw/main/assets/images/Screenshot.png",
+      deployedUrl: "https://tamarajoniec.github.io/Password-Generator/",
+      githubUrl: "https://github.com/TamaraJoniec/Password-Generator/tree/main",
+    },
   ];
   
   export default projectsData;
