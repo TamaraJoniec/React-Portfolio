@@ -1,16 +1,22 @@
 // Import required modules
-import React from "react";
+import React, { useState, useRef, useEffect } from 'react';
 import { Col, Container, Row } from "react-bootstrap"; // Import the required Bootstrap components
-import ProjectsData from "./ProjectsData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome icons
-import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons"; // Import FontAwesome icons
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';  // Ensure AOS is imported here
+import 'aos/dist/aos.css';
+
 
 function ProjectGallery(props) {
-  
+  useEffect(() => {
+    // Add class when component is mounted
+    document.body.classList.add("project-gallery-bg");
+
+    // Clean up: remove class when component is unmounted
+    return () => {
+      document.body.classList.remove("project-gallery-bg");
+    }
+  }, []);
   return (
-    <Container>
+    <Container className="project-gallery-bg">
       <Row xs={1} sm={2} md={3} className="g-4">
         {props.projects ? (
           props.projects.map((project) => (

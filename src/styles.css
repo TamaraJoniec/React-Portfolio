@@ -17,6 +17,7 @@ html {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 /* Navigation bar style */
@@ -136,7 +137,7 @@ html {
       var(--primary-color) 25%,
       var(--secondary-color) 80%,
       transparent);
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   position: absolute;
   top: 0;
@@ -165,13 +166,10 @@ html {
   color: var(--secondary-color);
 }
 
-/* Use the primary color for headings */
-
 .subHeading {
   color: var(--primary-color);
 }
 
-/* Use the secondary color for buttons */
 button {
   background-color: var(--secondary-color);
   color: white;
@@ -181,18 +179,8 @@ button {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Add more whitespace around elements */
 header {
   padding: 20px;
-}
-
-/* Use modern fonts */
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* Add a gradient background to the header */
-header {
   background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
   color: white;
 }
@@ -201,14 +189,6 @@ header {
 .bi.bi-code-slash,
 .bi.bi-laptop {
   color: #7a7a7a;
-  /* This is a soft gray color */
-}
-
-/* Simplify the design */
-footer {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
 }
 
 /* Project gallery */
@@ -235,17 +215,15 @@ h5.card-title,
   background-color: #f0f0f0; /* Slightly darker shade on hover */
 }
 /* Project gallery */
-body {
-  background-color: #1a1a1a; /* Dark background color */
-  color: #eaeaea; /* Light text for better visibility on dark background */
+body.project-gallery-bg {
+  background-color: #000; /* Black background color */
 }
-
 .card {
-  overflow: hidden; /* Hide the parts of the project images that slide out of the card */
+  overflow: hidden;
   margin-bottom: 50px;
-  animation-duration: 1s; /* Time it takes for the slide-in effect to complete */
-  animation-timing-function: ease-out; /* Begin fast, then slow down at the end */
-  visibility: hidden; /* Initially, we don't want to display the cards */
+  border: none; /* Remove default borders */
+  background-color: #fff; /* White card background */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .card:nth-child(odd) .card-img-top {
@@ -402,6 +380,12 @@ body {
   animation: bounce 2s infinite;
 }
 
+/* Simplify the design */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 /* Adjust for tablet */
 @media (max-width: 768px) {
   .home-container {
