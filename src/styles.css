@@ -63,17 +63,18 @@ html {
 }
 
 .intro {
-  margin-top: 25%;
+  font-size: 4rem;
+  margin: 35% 0% 25% 0;
 }
 
 .home-container::before {
   content: "";
   background: linear-gradient(to bottom,
       transparent,
-      var(--primary-color) 2%,
-      var(--secondary-color) 70%,
+      var(--primary-color) 25%,
+      var(--secondary-color) 80%,
       transparent);
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   position: absolute;
   top: 0;
