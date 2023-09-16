@@ -301,22 +301,13 @@ h5.card-title,
 
 /* Buttons in Project Gallery */
 /* github nutto */
-.btn-github {
-  color: #fff;
-  background-color: #000;
-  border-color: #000;
+.btn-github, .btn-visit {
+  color: #aaa; /* Soft gray text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
   transition: all 0.3s ease-in-out;
-}
-
-.btn-github:hover {
-  color: #fff;
-  background-color: #2c2c2c;
-  border-color: #2c2c2c;
-}
-
-.btn-github:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card-body {
@@ -328,28 +319,10 @@ h5.card-title,
   margin-top: auto;
 }
 
-.btn-container>a {
+.btn-container > a {
   margin-right: 10px;
 }
 
-/* visit site buttons on project gallery page */
-.btn-visit {
-  color: #fff;
-  background-color: #e31b6d;
-  border-color: #e31b6d;
-  transition: all 0.3s ease-in-out;
-}
-
-.btn-visit:hover {
-  color: #fff;
-  background-color: #c71560;
-  border-color: #c71560;
-}
-
-.btn-visit:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(227, 27, 109, 0.5);
-}
 
 @keyframes bounce {
 
