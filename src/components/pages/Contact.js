@@ -6,7 +6,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Contact(props) {
   return (
-    <div className="contact-container my-5">
+    <div className="contact-container">
       <div className="row">
         <div className="contact-info text-white col-lg-6 mb-5">
           <h1 className="display-4 mb-4">Contact info</h1>
@@ -26,14 +26,11 @@ function Contact(props) {
               </a>
             </li>
             <li className="my-2">
-              <a href="https://drive.google.com/file/d/1FDen3lNQaXObjv4sA1_WNDf3UM7m8VRg/view?usp=sharing" download className="text-decoration-none text-primary" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+              <a href="images/Web_developer_Tamara_Joniec.pdf" download className="text-decoration-none text-primary" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
                 <FontAwesomeIcon icon={faFilePdf} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}>Download Resume (PDF)</span>
               </a>
             </li>
           </ul>
-
-
-
         </div>
         {/* Form */}
         <div className="col-lg-6 mb-5">

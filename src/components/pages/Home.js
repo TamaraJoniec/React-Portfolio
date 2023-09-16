@@ -8,7 +8,6 @@ function Home() {
     <div className="">
 
       <Container fluid className="home-container py-5">
-        
         <Row className="justify-content-center align-items-center">
           <Col md={6}>
             <h1 className="intro text-center text-light mb-4">Hi, I'm Tamara</h1>

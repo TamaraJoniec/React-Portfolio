@@ -210,6 +210,7 @@ div .card-body {
 /* Contact page */
 .contact-container {
   max-width: 100%;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /* Creates columns with a minimum width of 400px and auto-fit to fill the available space */
@@ -219,6 +220,9 @@ div .card-body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom right, #0e7afe, #9c36b5);
+}
+.contact-container > :first-child {
+  margin-top: 0;
 }
 
 .contact-container .col-lg-6 {
@@ -338,6 +342,7 @@ div .card-body {
 #toggleNav {
   animation: bounce 2s infinite;
 }
+
 /* Adjust for tablet */
 @media (max-width: 768px) {
   .home-container {
