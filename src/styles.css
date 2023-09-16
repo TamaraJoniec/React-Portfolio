@@ -17,11 +17,7 @@ html {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
-  /* Moved here to make it global */
-  background-color: var(--background-color);
-  /* Added for consistency */
 }
-
 
 /* Navigation bar style */
 
@@ -39,17 +35,14 @@ html {
   border: none;
   position: fixed;
   /* Fixing the position so it's always on the top-right */
-  top: 20px;
-  /* 20px from the top */
-  right: 20px;
-  /* 20px from the right */
-  height: 7%;  /* Set equal height to width */
+  top: 4%;
+  right: 4%;
+  padding: 2%;
   border-radius: 50%; /* Round shape */
   /* Making it a circle */
   cursor: pointer;
   transition: background-color 0.3s;
   z-index: 11;
-  /* Make sure it's above other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* Subtle shadow for depth */
 }
