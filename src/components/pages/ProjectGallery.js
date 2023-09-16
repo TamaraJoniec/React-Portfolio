@@ -4,16 +4,18 @@ import { Col, Container, Row } from "react-bootstrap"; // Import the required Bo
 import ProjectsData from "./ProjectsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesome icons
 import { faExternalLinkAlt, faCode } from "@fortawesome/free-solid-svg-icons"; // Import FontAwesome icons
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 function ProjectGallery(props) {
+  
   return (
     <Container>
       <Row xs={1} sm={2} md={3} className="g-4">
         {props.projects ? (
           props.projects.map((project) => (
             <Col key={project.id}>
-              <div className="card h-100 shadow">
+              <div className="card h-100 shadow" >
                 <img
                   src={project.imageUrl}
                   className="card-img-top"

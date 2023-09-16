@@ -50,7 +50,8 @@ function Home() {
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
             <h3 className='subHeading'>Recent Projects</h3>
-            <p className="lead">Click on a project to learn more.</p>
+            <br />
+            <br />
           </Col>
         </Row>
         <Row className="justify-content-center">

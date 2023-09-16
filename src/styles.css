@@ -116,7 +116,7 @@ html {
 
 /* Home page */
 .home-container {
-  height: 100vh;
+  height: 90vh;
   position: relative;
   /* Ensure it's positioned */
   z-index: 1;
@@ -136,7 +136,7 @@ html {
       var(--primary-color) 25%,
       var(--secondary-color) 80%,
       transparent);
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   position: absolute;
   top: 0;
@@ -211,24 +211,104 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Projet gallery */
+/* Project gallery */
 .card-img-top {
   width: 100%;
-  /* or whatever width you desire */
   height: 50%;
-  /* or whatever height you desire */
+  object-fit: cover; /* Ensure images cover the space without distortion */
+  border-radius: 12px 12px 0 0; /* Rounded top corners */
 }
 
 div .card-body {
   height: 50%;
-  /* or whatever height you desire */
+  background-color: var(--background-color); /* Use the defined background color */
+  border-radius: 0 0 12px 12px; /* Rounded bottom corners */
+  transition: background-color 0.3s ease;
 }
 
 h5.card-title,
 .card-text {
   color: #7a7a7a;
-  /* This is a soft gray color */
 }
+
+.card:hover .card-body {
+  background-color: #f0f0f0; /* Slightly darker shade on hover */
+}
+/* Project gallery */
+body {
+  background-color: #1a1a1a; /* Dark background color */
+  color: #eaeaea; /* Light text for better visibility on dark background */
+}
+
+.card {
+  overflow: hidden; /* Hide the parts of the project images that slide out of the card */
+  margin-bottom: 50px;
+  animation-duration: 1s; /* Time it takes for the slide-in effect to complete */
+  animation-timing-function: ease-out; /* Begin fast, then slow down at the end */
+  visibility: hidden; /* Initially, we don't want to display the cards */
+}
+
+.card:nth-child(odd) .card-img-top {
+  animation-name: slideInFromLeft; /* Slide in from left for odd numbered cards */
+}
+
+.card:nth-child(even) .card-img-top {
+  animation-name: slideInFromRight; /* Slide in from right for even numbered cards */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+/* Slide-in animations */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+/* Buttons in Project Gallery */
+.btn-github, .btn-visit {
+  display: none; /* Hide the buttons */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container {
+  margin-top: auto;
+}
+
+.btn-container > a {
+  margin-right: 10px;
+}
+
 
 /* Contact page */
 .contact-container {
@@ -299,31 +379,6 @@ h5.card-title,
   box-shadow: none;
 }
 
-/* Buttons in Project Gallery */
-/* github nutto */
-.btn-github, .btn-visit {
-  color: #aaa; /* Soft gray text */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 12px;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-}
-
-.btn-container {
-  margin-top: auto;
-}
-
-.btn-container > a {
-  margin-right: 10px;
-}
-
-
 @keyframes bounce {
 
   0%,
@@ -350,11 +405,11 @@ h5.card-title,
 /* Adjust for tablet */
 @media (max-width: 768px) {
   .home-container {
-    height: 60vh;
+    height: 90vh;
   }
 
   .home-container::before {
-    height: 60vh;
+    height: 90vh;
   }
 }
 
@@ -362,11 +417,11 @@ h5.card-title,
 @media (max-width: 480px) {
   .home-container {
 
-    height: 50vh;
+    height: 90vh;
   }
 
   .home-container::before {
-    height: 50vh;
+    height: 90vh;
   }
 
   .btn.btn-lg.btn-secondary.mx-2 {
