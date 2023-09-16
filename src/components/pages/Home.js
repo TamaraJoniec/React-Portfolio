@@ -47,11 +47,11 @@ function Home() {
         </Row>
       </Container>
       {/* Projects section */}
-      <Container fluid className="bg-light py-5">
+      <Container fluid className="py-5">
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
             <h3 className='subHeading'>Recent Projects</h3>
-            <p className="lead">Here are some of my recent projects. Click on a project to learn more about it.</p>
+            <p className="lead">Click on a project to learn more.</p>
           </Col>
         </Row>
         <Row className="justify-content-center">

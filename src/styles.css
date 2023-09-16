@@ -76,7 +76,6 @@ html {
   /* Slight darkening on hover */
 }
 
-
 .navbar ul {
   position: fixed;
   /* Fullscreen overlay */
@@ -143,7 +142,6 @@ html {
   /* This ensures the gradient is behind the content of .home-container */
 }
 
-
 .btn-secondary {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -196,6 +194,11 @@ header {
   color: white;
 }
 
+/* about */
+.bi.bi-code-slash,
+.bi.bi-laptop {
+  color: #7a7a7a; /* This is a soft gray color */
+}
 /* Simplify the design */
 footer {
   text-align: center;
@@ -203,6 +206,14 @@ footer {
   margin-bottom: 20px;
 }
 
+/* Projet gallery */
+.card-img-top {
+  width: 100%; /* or whatever width you desire */
+  height: 50%; /* or whatever height you desire */
+}
+div .card-body {
+  height: 50%; /* or whatever height you desire */
+}
 /* Contact page */
 .contact-container {
   max-width: 100%;
