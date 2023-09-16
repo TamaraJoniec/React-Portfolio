@@ -1,7 +1,6 @@
 // Import required modules
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from "react-bootstrap"; // Import the required Bootstrap components
-import AOS from 'aos';  // Ensure AOS is imported here
 import 'aos/dist/aos.css';
 
 
