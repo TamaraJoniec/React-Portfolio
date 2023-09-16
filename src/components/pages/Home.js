@@ -26,7 +26,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Container className="py-5">
+      <Container id="about" className="py-5">
         <Row className="justify-content-center mb-5">
           <Col md={8} className="text-center">
             <h3 className='subHeading'>What I Do</h3>

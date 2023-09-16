@@ -1,45 +1,25 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
 function NavTabs() {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
-    <div className='navbar'>
-    <ul className="nav ul nav-tabs">
-      <li className="navbar item">
-        <NavLink
-          to="/React-Portfolio/"
-          end
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Home
-        </NavLink>
-      </li>
-      <li className="navbar item">
-        <NavLink
-          to="/React-Portfolio/project-gallery/"
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Project Gallery
-        </NavLink>
-      </li>
-      <li className="navbar item">
-        <NavLink
-          to="/React-Portfolio/contact/"
-          end
-          className={({ isActive }) =>
-            isActive ? 'nav-link active' : 'nav-link'
-          }
-        >
-          Contact
-        </NavLink>
-      </li>
-    </ul>
+    <div className="navbar">
+      <button id="toggleNav" onClick={() => setNavOpen(!navOpen)}>Menu</button>
+      <ul style={{ transform: navOpen ? 'translateX(0)' : 'translateX(100%)' }}>
+        <li>
+          <button onClick={() => setNavOpen(false)}>X</button>
+        </li>
+        <li><a href="/React-Portfolio/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/React-Portfolio/project-gallery/">Portfolio</a></li>
+        <li><a href="/React-Portfolio/contact/">Contact</a></li>
+      </ul>
+
     </div>
+
   );
 }
+
 
 export default NavTabs;
