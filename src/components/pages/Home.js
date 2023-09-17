@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import ProjectGallery from './ProjectGallery';
 import projectsData from './ProjectsData';
-
+import Footer from './Footer';
 import 'aos/dist/aos.css';
 
 function Home() {
@@ -50,6 +50,9 @@ function Home() {
       </Container>
       {/* Projects section */}
     <ProjectGallery projects={projectsData}/>
+    <br />
+    <br />
+    <Footer />
     </div >
   );
 }

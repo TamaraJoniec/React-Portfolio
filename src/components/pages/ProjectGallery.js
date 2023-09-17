@@ -1,8 +1,8 @@
 // Import required modules
 import React, { useEffect } from 'react';
 import { Col, Container, Row } from "react-bootstrap"; // Import the required Bootstrap components
+import Footer from './Footer';
 import 'aos/dist/aos.css';
-
 
 function ProjectGallery(props) {
   useEffect(() => {
@@ -13,6 +13,7 @@ function ProjectGallery(props) {
   }, []);
 
   return (
+    <>
     <Container className="project-gallery-container">
       <h2 className="gallery-title">Past Projects</h2>
       <Row xs={1} sm={2} md={3} className="g-4">
@@ -53,7 +54,11 @@ function ProjectGallery(props) {
           <p>No projects found</p>
         )}
       </Row>
+      <br />
+      <br />
     </Container>
+    <Footer />
+    </>
   );
 }
 
