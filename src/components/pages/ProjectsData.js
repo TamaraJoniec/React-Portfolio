@@ -16,7 +16,7 @@ const projectsData = [
     {
       id: "3",
       title: "Weather Dashboard",
-      imageUrl: "https://raw.githubusercontent.com/TamaraJoniec/Server-APIs-Weather-Dashboard/main/assets/images/10-server-side-apis-challenge-demo.png",
+      imageUrl:"https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       deployedUrl: "https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/",
       githubUrl: "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard",
     },
