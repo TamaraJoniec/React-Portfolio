@@ -334,6 +334,7 @@ h5.card-title {
   background-color: #fff;
   border-radius: 5px;
   color: gray;
+  margin-right: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -400,6 +401,7 @@ footer {
   padding: 20px 0 20px 0;
   position: relative;
   width: 100vw;
+  margin-bottom: 0;
 }
 
 .footer-content {
