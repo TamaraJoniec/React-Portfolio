@@ -13,7 +13,7 @@ function ProjectGallery(props) {
   }, []);
 
   return (
-    <Container className="project-gallery-container">
+    <Container id="project-gallery" className="project-gallery-container">
       <h2 className="gallery-title">Past Projects</h2>
       <Row xs={1} sm={2} md={3} className="g-4">
         {props.projects ? (

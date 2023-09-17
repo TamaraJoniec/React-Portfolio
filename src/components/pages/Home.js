@@ -52,7 +52,7 @@ function Home() {
     <ProjectGallery projects={projectsData}/>
     <br />
     <br />
-    <Footer />
+    <Footer id="contact"/>
     </div >
   );
 }
