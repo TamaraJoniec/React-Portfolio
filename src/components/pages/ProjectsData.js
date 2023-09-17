@@ -23,14 +23,14 @@ const projectsData = [
     {
       id: "4",
       title: "Marketing agency",
-      imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/raw/main/assets/images/01-html-css-git-challenge-demo.jpeg",
+      imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/raw/main/assets/images/Screenshot.png",
       deployedUrl: "https://tamarajoniec.github.io/Code-Refactor/",
       githubUrl: "https://github.com/TamaraJoniec/Code-Refactor",
     },
     {
       id: "5",
       title: "Furniture store",
-      imageUrl: "https://github.com/TamaraJoniec/Furniture-Website/raw/main/images/screencapture.jpg",
+      imageUrl: "https://github.com/TamaraJoniec/Furniture-Website/raw/main/images/Screenshot.png",
       deployedUrl: "https://tamarajoniec.github.io/Furniture-Website/",
       githubUrl: "https://github.com/TamaraJoniec/Furniture-Website",
     },
