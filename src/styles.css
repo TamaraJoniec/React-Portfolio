@@ -17,6 +17,7 @@ html {
   height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
   
 }
 
@@ -205,7 +206,7 @@ header {
 }
 
 body.project-gallery-bg {
-  background-image: linear-gradient(var(--primary-color), #f5f5f5);
+  background-image: linear-gradient(to bottom, var(--primary-color), #f5f5f5);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -227,20 +228,31 @@ body.project-gallery-bg {
 }
 
 
-h5.card-title,
-.card-text {
+h5.card-title {
   font-weight: 600;
-  color: #7a7a7a;
+  color: #f0f0f0;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 15px;
+  text-shadow:0 8px 20px rgba(0, 0, 0, 0.3);;
 }
-
+.card:hover h5.card-title {
+  color: #f0f0f0; /* Pink color on hover */
+  font-size: 1.6rem; /* Slightly bigger font size on hover */
+  text-shadow:
+  0 0 5px var(--secondary-color),
+  0 0 10px var(--secondary-color),
+  0 0 15px var(--secondary-color),
+  0 0 20px var(--secondary-color),
+  0 0 25px var(--secondary-color),
+  0 0 30px var(--secondary-color);
+  transition: all 0.3s ease;
+}
 /* Neon Button Styles */
 .btn.btn-visit, .btn.btn-github {
   background-color: transparent;
-  color: var(--secondary-color); /* Bright neon color */
-  border: 2px solid var(--secondary-color);
+  color: var(--primary-color); /* Bright neon color */
+  border: 2px solid var(--primary-color);
   border-radius: 12px;
   padding: 8px 16px;
   margin-right: 10px;
@@ -252,8 +264,8 @@ h5.card-title,
 }
 
 .btn.btn-visit:hover, .btn.btn-github:hover {
-  background-color: #00ff9d;
-  color: var(--primary-color);
+  background-color: #f5f5f5;
+  color: #7a7a7a;
 }
 
 .btn-container {
