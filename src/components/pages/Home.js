@@ -1,7 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import ProjectGallery from './ProjectGallery';
+import projectsData from './ProjectsData';
 
+import 'aos/dist/aos.css';
 
 function Home() {
   return (
@@ -46,56 +49,7 @@ function Home() {
         </Row>
       </Container>
       {/* Projects section */}
-      <Container fluid className="py-5">
-        <Row className="justify-content-center">
-          <Col md={8} className="text-center">
-            <h3 className='subHeading'>Recent Projects</h3>
-            <br />
-            <br />
-          </Col>
-        </Row>
-        <Row className="justify-content-center">
-          {/* Project card 1 */}
-          <Col md={4} className="text-center mb-4">
-            <a href="https://tamarajoniec.github.io/Daily-Planner/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-              <div className="project-card">
-                {/* Project card overlay with project title and description */}
-                <div className="project-card-overlay">
-                  <h5 className='subHeading'>Daily Planner</h5>
-                </div>
-                {/* Project image */}
-                <img src="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Daily Planner" className="img-fluid" target="_blank" rel="noopener noreferrer" />
-              </div>
-            </a>
-          </Col>
-          {/* Project card 2 */}
-          <Col md={4} className="text-center mb-4">
-            <a href="https://clicky-game.netlify.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-              <div className="project-card">
-                {/* Project card overlay with project title and description */}
-                <div className="project-card-overlay">
-                  <h5 className='subHeading'>Clicky Game</h5>
-                </div>
-                {/* Project image */}
-                <img src="https://github.com/TamaraJoniec/memory-game/raw/main/src/Screenshot.png" alt="Clicky Game" className="img-fluid" target="_blank" rel="noopener noreferrer" />
-              </div>
-            </a>
-          </Col>
-          {/* Project card 3 */}
-          <Col md={4} className="text-center mb-4">
-            <a href="https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/" className="img-fluid" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-              <div className="project-card">
-                {/* Project card overlay with project title and description */}
-                <div className="project-card-overlay">
-                  <h5 className='subHeading'>Weather Dashboard</h5>
-                </div>
-                {/* Project image */}
-                <img src="https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project Weather Dashboard" className="img-fluid" target="_blank" rel="noopener noreferrer" />
-              </div>
-            </a>
-          </Col>
-        </Row>
-      </Container>
+    <ProjectGallery projects={projectsData}/>
     </div >
   );
 }
