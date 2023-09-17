@@ -192,48 +192,38 @@ header {
 }
 
 /* Project gallery */
-.card-img-top {
-  width: 100%;
-  height: 50%;
-  object-fit: cover; /* Ensure images cover the space without distortion */
-  border-radius: 12px 12px 0 0; /* Rounded top corners */
-}
-
-div .card-body {
-  height: 50%;
-  background-color: var(--background-color); /* Use the defined background color */
-  border-radius: 0 0 12px 12px; /* Rounded bottom corners */
-  transition: background-color 0.3s ease;
+.gallery-title {
+  color: #7a7a7a; /* Brighter text for title */
+  font-size: 3rem; /* Title size */
+  margin: 10% 0 5% 0; /* Space between title and cards */
+  text-align: center; /* Centered title */
 }
 
 h5.card-title,
 .card-text {
   color: #7a7a7a;
 }
-
 .card:hover .card-body {
   background-color: #f0f0f0; /* Slightly darker shade on hover */
 }
-/* Project gallery */
 body.project-gallery-bg {
-  background-color: #000; /* Black background color */
+  background-color: #f5f5f5; /* Dark grayish background color */
 }
+
 .card {
   overflow: hidden;
   margin-bottom: 50px;
-  border: none; /* Remove default borders */
-  background-color: #fff; /* White card background */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: none;
+  background: transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-.card:nth-child(odd) .card-img-top {
-  animation-name: slideInFromLeft; /* Slide in from left for odd numbered cards */
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
 }
-
-.card:nth-child(even) .card-img-top {
-  animation-name: slideInFromRight; /* Slide in from right for even numbered cards */
-}
-
 .card-img-top {
   width: 100%;
   height: 100%;
@@ -243,7 +233,36 @@ body.project-gallery-bg {
 }
 
 .card:hover .card-img-top {
-  transform: scale(1.05); /* Zoom in effect on hover */
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #ff40ff; /* Neon color for title */
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Neon Button Styles */
+.btn-visit, .btn-github {
+  background-color: transparent;
+  color: var(--primary-color); /* Neon color for text */
+  border: 2px solid var(--primary-color); /* Neon border */
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-visit:hover, .btn-github:hover {
+  background-color: var(--secondary-color); /* Neon background on hover */
+  color: #121212; /* Dark text on hover */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* Slide-in animations */

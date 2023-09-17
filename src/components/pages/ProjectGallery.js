@@ -16,6 +16,7 @@ function ProjectGallery(props) {
   }, []);
   return (
     <Container className="project-gallery-bg">
+      <h2 className="gallery-title">Past Projects</h2> {/* Added Title */}
       <Row xs={1} sm={2} md={3} className="g-4">
         {props.projects ? (
           props.projects.map((project) => (
