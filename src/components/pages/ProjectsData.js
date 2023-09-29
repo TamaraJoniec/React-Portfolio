@@ -3,7 +3,7 @@ const projectsData = [
       id: "1",
       title: "Meeow",
       imageUrl: "https://github.com/TamaraJoniec/Meeow/raw/main/assets/ScreenshotMeeow.png",
-      deployedUrl: "https://tamarajoniec.github.io/Meeow/",
+      deployedUrl: "https://www.meeow.com/",
       githubUrl: "https://github.com/TamaraJoniec/Meeow" ,
     },
     {
