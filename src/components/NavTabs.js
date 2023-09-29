@@ -21,7 +21,7 @@ function NavTabs() {
         document.removeEventListener("click", handleOutsideClick);
       };
     }
-    
+
   }, []);
 
   return (

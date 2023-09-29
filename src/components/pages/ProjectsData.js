@@ -1,10 +1,10 @@
 const projectsData = [
     {
       id: "1",
-      title: "Clicky-game",
-      imageUrl: "https://github.com/TamaraJoniec/memory-game/raw/main/src/Screenshot.png",
-      deployedUrl: "https://clicky-game.netlify.app/",
-      githubUrl: "https://github.com/TamaraJoniec/memory-game",
+      title: "Meeow",
+      imageUrl: "https://github.com/TamaraJoniec/Meeow/raw/main/assets/ScreenshotMeeow.png",
+      deployedUrl: "https://tamarajoniec.github.io/Meeow/",
+      githubUrl: "https://github.com/TamaraJoniec/Meeow" ,
     },
     {
       id: "2",
