@@ -44,7 +44,7 @@ function Home() {
           <Col md={4} className="text-center">
             <i className="bi bi-laptop display-1 mb-4"></i>
             <h4 className='subHeading'>Web Development</h4>
-            <p>I build responsive and fast-loading websites using modern web technologies like HTML, CSS, and JavaScript.</p>
+            <p>I build responsive and fast-loading websites using modern web technologies like React, Vue, and Tailwind CSS.</p>
           </Col>
         </Row>
       </Container>
