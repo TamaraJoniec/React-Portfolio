@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import ProjectGallery from './ProjectGallery';
@@ -50,9 +50,7 @@ function Home() {
       </Container>
       {/* Projects section */}
     <ProjectGallery projects={projectsData}/>
-    <br />
-    <br />
-    <Footer id="contact"/>
+ 
     </div >
   );
 }
