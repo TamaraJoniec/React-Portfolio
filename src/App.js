@@ -13,13 +13,13 @@ function App() {
       <div>
         <NavTabs />
         {/* Wrap Route elements in a Routes component */}
-        <Routes basename="/React-Portfolio/">
+        <Routes basename="/">
           {/* Define routes using the Route component to render different page components at different paths */}
           {/* Define a default route that will render the Home component */}
-          <Route path="/React-Portfolio/" element={<Home />} />
-          <Route path="/React-Portfolio/project-gallery/" element={<ProjectGallery projects={projectsData} />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/project-gallery/" element={<ProjectGallery projects={projectsData} />} />
           {/* Define a route that will have descendant routes */}
-          <Route path="/React-Portfolio/contact/" element={<Contact />} />
+          <Route path="/contact/" element={<Contact />} />
         </Routes>
       </div>
     </Router>
