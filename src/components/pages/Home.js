@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from 'react-router-dom';
 import ProjectGallery from './ProjectGallery';
 import projectsData from './ProjectsData';
 import 'aos/dist/aos.css';
@@ -16,13 +15,13 @@ function Home() {
             <h2 className=" text-center text-light mb-5">I'm a web developer based in the U.K.</h2>
             <div className="d-flex justify-content-center nav">
               {/* Link to the project gallery */}
-              <Link to="/React-Portfolio/project-gallery/">
+              <a href="/project-gallery/">
                 <button className="btn btn-lg btn-secondary mx-2">View Portfolio</button>
-              </Link>
+              </a>
               {/* Link to the contact page */}
-              <Link to="/React-Portfolio/contact/">
+              <a href="/contact/">
                 <button className="btn btn-lg btn-outline-light mx-2">Contact Me</button>
-              </Link>
+              </a>
             </div>
           </Col>
         </Row>
@@ -48,7 +47,7 @@ function Home() {
         </Row>
       </Container>
       {/* Projects section */}
-    <ProjectGallery projects={projectsData}/>
+      <ProjectGallery projects={projectsData} />
     </div >
   );
 }
