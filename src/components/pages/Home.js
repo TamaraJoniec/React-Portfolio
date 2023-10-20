@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import ProjectGallery from './ProjectGallery';
 import projectsData from './ProjectsData';
+import Button from 'react-bootstrap/Button';
 import 'aos/dist/aos.css';
 
 function Home() {
   return (
-    <div className="">
-
+    <div>
       <Container fluid className="home-container py-5">
         <Row className="justify-content-center align-items-center">
           <Col md={6}>
@@ -15,13 +16,13 @@ function Home() {
             <h2 className=" text-center text-light mb-5">I'm a web developer based in the U.K.</h2>
             <div className="d-flex justify-content-center nav">
               {/* Link to the project gallery */}
-              <a href="/project-gallery/">
-                <button className="btn btn-lg btn-secondary mx-2">View Portfolio</button>
-              </a>
+              <Link to="/project-gallery/">
+                <Button className="btn btn-lg btn-secondary mx-2">View Portfolio</Button>
+              </Link>
               {/* Link to the contact page */}
-              <a href="/contact/">
-                <button className="btn btn-lg btn-outline-light mx-2">Contact Me</button>
-              </a>
+              <Link to="/contact/">
+                <Button className="btn btn-lg btn-outline-light mx-2" variant="outline-light">Contact Me</Button>
+              </Link>
             </div>
           </Col>
         </Row>
