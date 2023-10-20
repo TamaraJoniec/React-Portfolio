@@ -57,6 +57,7 @@ function ProjectGallery(props) {
       <br />
       <br />
     </Container>
+    <div style={{height: 50}}></div>
     <Footer />
     </div>
   );
