@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -32,9 +33,9 @@ function NavTabs() {
         <span className="bar"></span>
         <span className="bar"></span>      </button>
       <ul style={{ transform: navOpen ? 'translateX(0)' : 'translateX(100%)' }}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/project-gallery/">Portfolio</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/project-gallery/">Portfolio</Link></li>
+        <li><Link to="/contact/">Contact</Link></li>
       </ul>
     </div>
   );
