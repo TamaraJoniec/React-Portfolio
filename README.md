@@ -12,4 +12,4 @@ Now that I've worked with React and have multiple projects to share, it's time t
 
 #### GitHub URL
 
-https://tamarajoniec.github.io/React-Portfolio/
+https://tamarajoniec-portfolio.netlify.app/
