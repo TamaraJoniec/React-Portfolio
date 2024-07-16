@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.3355cb4f.css",
-    "main.js": "/React-Portfolio/static/js/main.037775f2.js",
-    "static/media/bootstrap-icons.woff?": "/React-Portfolio/static/media/bootstrap-icons.188c4daf771cf463a7f8.woff",
-    "static/media/bootstrap-icons.woff2?": "/React-Portfolio/static/media/bootstrap-icons.20b477712d7957d9b029.woff2",
-    "index.html": "/React-Portfolio/index.html",
-    "main.3355cb4f.css.map": "/React-Portfolio/static/css/main.3355cb4f.css.map",
-    "main.037775f2.js.map": "/React-Portfolio/static/js/main.037775f2.js.map"
+    "main.css": "/static/css/main.9c0273bb.css",
+    "main.js": "/static/js/main.8efba348.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.188c4daf771cf463a7f8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.20b477712d7957d9b029.woff2",
+    "index.html": "/index.html",
+    "main.9c0273bb.css.map": "/static/css/main.9c0273bb.css.map",
+    "main.8efba348.js.map": "/static/js/main.8efba348.js.map"
   },
   "entrypoints": [
-    "static/css/main.3355cb4f.css",
-    "static/js/main.037775f2.js"
+    "static/css/main.9c0273bb.css",
+    "static/js/main.8efba348.js"
   ]
 }
