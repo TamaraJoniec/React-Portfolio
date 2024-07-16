@@ -1,7 +1,6 @@
 // Import required modules
 import React, { useEffect } from 'react';
-import { Col, Container, Row } from "react-bootstrap"; // Import the required Bootstrap components
-import Footer from './Footer';
+import { Col, Container, Row } from "react-bootstrap";
 import 'aos/dist/aos.css';
 
 function ProjectGallery(props) {
@@ -16,7 +15,7 @@ function ProjectGallery(props) {
     <div>
     <Container id="project-gallery" className="project-gallery-container">
       <h2 className="gallery-title">Past Projects</h2>
-      <Row xs={1} sm={2} md={3} className="g-4">
+      <Row xs={1} sm={2} md={2} className="g-4">
         {props.projects ? (
           props.projects.map((project) => (
             <Col key={project.id}>
@@ -57,8 +56,6 @@ function ProjectGallery(props) {
       <br />
       <br />
     </Container>
-    <div style={{height: 50}}></div>
-    <Footer />
     </div>
   );
 }

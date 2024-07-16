@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import Footer from './Footer';
 
 function Contact() {
   return (
@@ -32,29 +31,8 @@ function Contact() {
               </li>
             </ul>
           </div>
-          {/* Form */}
-          <div className="col-lg-6 mb-5">
-            <h2>Get in touch</h2>
-            <form>
-              <div className="form-group mb-3">
-                <label htmlFor="name" className="form-label">Name</label>
-                <input type="text" className="form-control" id="name" placeholder="Enter your name" />
-              </div>
-              <div className="form-group mb-3">
-                <label htmlFor="email" className="form-label">Email address</label>
-                <input type="email" className="form-control" id="email" placeholder="Enter your email" />
-              </div>
-              <div className="form-group mb-3">
-                <label htmlFor="message" className="form-label">Message</label>
-                <textarea className="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
-            </form>
-          </div>
         </div>
-
       </div>
-      <Footer />
     </div>
 
   );

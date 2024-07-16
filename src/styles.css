@@ -120,12 +120,6 @@ html {
   color: var(--secondary-color);
 }
 
-/* Home page */
-.home-container {
-  height: 50vh;
-  position: relative;
-}
-
 .intro {
   font-size: 4rem;
   margin: 25% 0% 25% 0;
@@ -181,7 +175,6 @@ button {
 }
 
 header {
-  padding: 20px;
   background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
   color: white;
 }
@@ -206,6 +199,8 @@ header {
 .card.h-100 {
   background-color: transparent;
   border-color: transparent;
+  margin-bottom: 4rem;
+  padding-inline: 2rem;
 }
 
 body.project-gallery-bg {
@@ -215,7 +210,10 @@ body.project-gallery-bg {
 }
 
 .project-gallery-container {
+  position: relative;
   width: 100vw;
+  top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .card-img-top {
@@ -237,7 +235,7 @@ body.project-gallery-bg {
 
 h5.card-title {
   font-weight: 600;
-  color: #f0f0f0;
+  color: #49348f;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 15px;
@@ -330,7 +328,7 @@ h5.card-title {
   background: linear-gradient(to bottom right, #0e7afe, #9c36b5);
 }
 
-.contact-container> :first-child {
+.contact-container > :first-child {
   margin-top: 0;
 }
 
@@ -341,7 +339,7 @@ h5.card-title {
 }
 
 .contact-info {
-  padding: 2rem;
+  margin-left: 10rem;
 }
 
 /* form element is then styled with padding, a white background, rounded corners, and a box shadow to make it stand out */
@@ -425,7 +423,7 @@ footer {
   display: flex;
   justify-content: space-between, center;
   align-items: center;
-  max-width: 1140px;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 0 20px;
 }

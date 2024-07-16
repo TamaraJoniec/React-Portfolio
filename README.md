@@ -1,15 +1,51 @@
-# React-Portfolio
+# Portfolio
 
-For this challenge, I will utilize what I have learned in `Module 13: React` to develop the initial scaffolding of my portfolio sites.
+## Tech Stack
 
-Now that I've worked with React and have multiple projects to share, it's time to develop the initial scaffolding for my first portfolio site as well as create and/or update other materials so that I can showcase my skills to potential employers. Creating a portfolio using React will help set me apart from other developers whose portfolios do not use some of the latest technologies.
+This portfolio is built using the following technologies:
 
-### Design
-
-* Mobile-first design
+- **React**: A JavaScript library for building user interfaces.
+- **CSS**: For styling components.
+- **Netlify**: For hosting the website and continuous deployment from GitHub.
+- **GitHub**: For version control and source code management.
 
 ![Screenshot of website](images/screencapture.jpg)
 
 #### GitHub URL
 
 https://tamarajoniec-portfolio.netlify.app/
+
+## Running Locally
+
+To run this project locally, follow these steps:
+
+1. Clone the repository to your local machine.
+
+2. Navigate to the directory where you cloned the repository:
+
+   ```bash
+   `cd path/to/repository`
+
+3. Install the necessary dependencies:
+
+4. Start the development server:
+
+`npm start`
+
+This will launch the project in your default web browser. By default, it will be available at http://localhost:3000.
+
+## Deploying to Netlify
+
+To deploy this project to Netlify, follow these steps:
+
+1. Build your project to create a production version:
+
+`npm run build`
+
+2. Install the Netlify CLI if you haven't already:
+
+`npm install netlify-cli -g`
+
+3. Deploy your site:
+
+`npm run deploy`

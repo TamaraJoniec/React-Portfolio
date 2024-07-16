@@ -30,7 +30,7 @@ function Home() {
         <Row className="justify-content-center mb-5">
           <Col md={8} className="text-center">
             <h3 className='subHeading'>What I Do</h3>
-            <p className="lead">I'm a web designer and developer based in the U.K. I create beautiful, responsive websites that look great on any device.</p>
+            <p className="lead">I'm a frontend web developer based in the U.K. I create beautiful, responsive websites that look great on any device.</p>
           </Col>
         </Row>
         <Row className="justify-content-center">
