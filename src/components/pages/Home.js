@@ -19,7 +19,6 @@ function Home() {
               <Link to="/project-gallery/">
                 <Button className="btn btn-lg btn-secondary mx-2">View Portfolio</Button>
               </Link>
-              {/* Link to the contact page */}
               <Link to="/contact/">
                 <Button className="btn btn-lg btn-outline-light mx-2" variant="outline-light">Contact Me</Button>
               </Link>
