@@ -122,12 +122,8 @@ html {
 
 /* Home page */
 .home-container {
-  height: 90vh;
+  height: 50vh;
   position: relative;
-  /* Ensure it's positioned */
-  z-index: 1;
-  /* Ensure it's above the gradient */
-  /* Set a solid background color */
 }
 
 .intro {
@@ -172,7 +168,7 @@ html {
 }
 
 .subHeading {
-  color: var(--primary-color);
+  color: white;
 }
 
 button {
@@ -471,27 +467,9 @@ footer {
     0 0 15px var(--secondary-color);
 }
 
-/* Adjust for tablet */
-@media (max-width: 768px) {
-  .home-container {
-    height: 90vh;
-  }
-
-  .home-container::before {
-    height: 90vh;
-  }
-}
 
 /* Adjust for mobile */
 @media (max-width: 480px) {
-  .home-container {
-
-    height: 90vh;
-  }
-
-  .home-container::before {
-    height: 90vh;
-  }
 
   .btn.btn-lg.btn-secondary.mx-2 {
     margin-bottom: 8%;

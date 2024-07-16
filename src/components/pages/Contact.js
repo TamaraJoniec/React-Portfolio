@@ -14,7 +14,6 @@ function Contact() {
             <h2>Hello, I'm</h2>
             <h1>Tamara Joniec</h1>
             {/* React icons instead of text for the links */}
-            <h2 style={{ textAlign: 'center', fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}></h2>
             <ul className="list-unstyled lead">
               <li className="my-2">
                 <a href="https://github.com/TamaraJoniec" target="_blank" rel="noreferrer" className="text-decoration-none text-primary" style={{ display: 'flex', alignItems: 'center' }}>

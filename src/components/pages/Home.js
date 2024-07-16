@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 function Home() {
   return (
     <div>
-      <Container fluid className="home-container py-5">
+      <Container fluid className="home-container py-5 h-1/2">
         <Row className="justify-content-center align-items-center">
           <Col md={6}>
             <h1 className="intro text-center text-light mb-4">Hi, I'm Tamara</h1>
@@ -35,11 +35,6 @@ function Home() {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col md={4} className="text-center">
-            <i className="bi bi-code-slash display-1 mb-4"></i>
-            <h4 className='subHeading'>Web Design</h4>
-            <p>I design beautiful and intuitive user interfaces that make websites easy to use and navigate.</p>
-          </Col>
           <Col md={4} className="text-center">
             <i className="bi bi-laptop display-1 mb-4"></i>
             <h4 className='subHeading'>Web Development</h4>

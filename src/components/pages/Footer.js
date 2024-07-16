@@ -5,7 +5,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (
-        <footer >
+        <footer className="mt-auto">
             <ul className="footer-icons">
                 <a href="https://github.com/TamaraJoniec" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}></span></a>
                 <a href="https://www.linkedin.com/in/tamara-joniec/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="link me-2" style={{ fontSize: '24px', color: 'white' }} /><span style={{ fontSize: '20px', color: 'white' }}></span>
