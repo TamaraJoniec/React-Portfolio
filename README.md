@@ -28,6 +28,9 @@ To run this project locally, follow these steps:
 
 3. Install the necessary dependencies:
 
+`nvm use`
+`npm i`
+
 4. Start the development server:
 
 `npm start`
@@ -38,14 +41,14 @@ This will launch the project in your default web browser. By default, it will be
 
 To deploy this project to Netlify, follow these steps:
 
-1. Build your project to create a production version:
+1. Build project to create a production version:
 
 `npm run build`
 
-2. Install the Netlify CLI if you haven't already:
+2. Install the Netlify CLI:
 
 `npm install netlify-cli -g`
 
-3. Deploy your site:
+3. Deploy site using the Netlify CLI:
 
-`npm run deploy`
+`netlify deploy --prod`
