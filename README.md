@@ -28,8 +28,7 @@ To run this project locally, follow these steps:
 
 3. Install the necessary dependencies:
 
-`nvm use`
-`npm i`
+`npm install -g npm@latest`
 
 4. Start the development server:
 
