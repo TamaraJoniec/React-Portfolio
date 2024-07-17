@@ -15,7 +15,7 @@ function ProjectGallery(props) {
     <div>
     <Container id="project-gallery" className="project-gallery-container">
       <h2 className="gallery-title">Past Projects</h2>
-      <Row xs={1} sm={2} md={2} className="g-4">
+      <Row xs={1} sm={1} md={2} className="g-4">
         {props.projects ? (
           props.projects.map((project) => (
             <Col key={project.id}>
