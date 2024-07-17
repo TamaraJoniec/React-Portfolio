@@ -1,7 +1,5 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
-
-/* Define a color palette */
 :root {
   --primary-color: #5563FF;
   /* Slightly changed for a modern look */
@@ -22,8 +20,6 @@ html {
 
 }
 
-/* Navigation bar style */
-
 .navbar {
   position: fixed;
   z-index: 10;
@@ -37,37 +33,27 @@ html {
 
 #toggleNav {
   background-color: transparent;
-  /* Making the background transparent */
   border: none;
   position: fixed;
-  /* Fixing the position so it's always on the top-right */
   top: 4%;
   right: 4%;
   padding: 2%;
   border-radius: 50%;
-  /* Round shape */
-  /* Making it a circle */
   cursor: pointer;
   transition: background-color 0.3s;
   z-index: 11;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
 }
 
 .bar {
   width: 30px;
-  /* Adjust for desired width */
   height: 5px;
-  /* Adjust for desired height/thickness */
   background-color: var(--background-color);
-  /* Switch to neon pink on hover */
   box-shadow: 0 0 10px var(--secondary-color),
-    /* Outer glow */
     0 0 20px var(--secondary-color),
     0 0 30px var(--secondary-color),
     0 0 40px var(--secondary-color);
   margin: 5px 0;
-  /* Space between bars */
   display: flex;
   flex-direction: column;
   border-radius: 4px;
@@ -76,26 +62,20 @@ html {
 
 #toggleNav:hover {
   background-color: var(--primary-color);
-  /* Switch to neon pink on hover */
   box-shadow: 0 0 10px var(--primary-color),
-    /* Outer glow */
     0 0 20px var(--primary-color),
     0 0 30px var(--primary-color),
     0 0 40px var(--primary-color);
-  /* Slight darkening on hover */
 }
 
 .navbar ul {
   position: fixed;
-  /* Fullscreen overlay */
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: rgba(255, 255, 255, 0.8);
-  /* Translucent white */
   backdrop-filter: blur(5px);
-  /* Blur effect */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,13 +84,11 @@ html {
   margin: 0;
   padding: 0;
   transform: translateX(100%);
-  /* Start off the screen */
   transition: transform 0.3s;
 }
 
 .navbar a {
   font-size: 2rem;
-  /* Increase size for better readability on overlay */
   color: var(--primary-color);
   text-decoration: none;
   margin: 10px 0;
@@ -138,7 +116,6 @@ html {
   top: 0;
   left: 0;
   z-index: -1;
-  /* This ensures the gradient is behind the content of .home-container */
 }
 
 .btn-secondary {
@@ -179,18 +156,16 @@ header {
   color: white;
 }
 
-/* about */
+/* About page */
 .bi.bi-code-slash,
 .bi.bi-laptop {
-  color: #7a7a7a;
+  color: #dee2e6;
 }
 
 /* Project gallery */
 .gallery-title {
   color: #f0f0f0;
-  /* Brighter text for title */
   margin: 5% 0 5% 0;
-  /* Space between title and cards */
   font-size: 2.5rem;
   text-align: center;
   font-weight: bold;
@@ -212,7 +187,7 @@ body.project-gallery-bg {
 .project-gallery-container {
   position: relative;
   width: 100vw;
-  top: 5rem;
+  top: 10rem;
   padding-bottom: 10rem;
 }
 
@@ -235,7 +210,7 @@ body.project-gallery-bg {
 
 h5.card-title {
   font-weight: 600;
-  color: #49348f;
+  color: #212529;
   font-size: 1.5rem;
   text-align: center;
   margin-top: 15px;
@@ -245,9 +220,7 @@ h5.card-title {
 
 .card:hover h5.card-title {
   color: #f0f0f0;
-  /* Pink color on hover */
   font-size: 1.6rem;
-  /* Slightly bigger font size on hover */
   text-shadow:
     0 0 5px var(--secondary-color),
     0 0 10px var(--secondary-color),
@@ -258,19 +231,16 @@ h5.card-title {
   transition: all 0.3s ease;
 }
 
-/* Neon Button Styles */
 .btn.btn-visit,
 .btn.btn-github {
   background-color: transparent;
-  color: var(--primary-color);
-  /* Bright neon color */
-  border: 2px solid var(--primary-color);
+  color: #212529;
+  border: 2px solid #212529;
   border-radius: 12px;
   padding: 8px 16px;
   margin-right: 10px;
   transition: all 0.3s ease;
   text-decoration: none;
-  /* Remove underline for anchor */
   font-weight: 600;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 
@@ -319,7 +289,6 @@ h5.card-title {
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* Creates columns with a minimum width of 400px and auto-fit to fill the available space */
   grid-gap: 2rem;
   justify-content: center;
   align-items: center;
@@ -334,7 +303,6 @@ h5.card-title {
 
 .contact-container .col-lg-6 {
   padding: 0 2rem;
-  /* add horizontal padding */
   margin-bottom: 0;
 }
 
@@ -342,7 +310,6 @@ h5.card-title {
   margin-left: 10rem;
 }
 
-/* form element is then styled with padding, a white background, rounded corners, and a box shadow to make it stand out */
 .contact-container form {
   padding: 2rem;
   background-color: #fff;
@@ -384,7 +351,6 @@ h5.card-title {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -406,13 +372,9 @@ h5.card-title {
   animation: bounce 2s infinite;
 }
 
-/* Footer */
-/* Footer styling */
-
 footer {
   background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
   color: #f0f0f0;
-  /* Bright white color for text */
   padding: 20px 0 20px 0;
   position: relative;
   width: 100vw;
@@ -448,7 +410,6 @@ footer {
   display: flex;
   justify-content: center;
   gap: 15px;
-  /* Spacing between icons */
 }
 
 .footer-icons .bi {
@@ -466,9 +427,7 @@ footer {
 }
 
 
-/* Adjust for mobile */
 @media (max-width: 480px) {
-
   .btn.btn-lg.btn-secondary.mx-2 {
     margin-bottom: 8%;
   }
