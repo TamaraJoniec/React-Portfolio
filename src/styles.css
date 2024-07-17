@@ -2,9 +2,7 @@
 
 :root {
   --primary-color: #5563FF;
-  /* Slightly changed for a modern look */
   --secondary-color: #C155FF;
-  /* Slightly changed for a modern look */
   --background-color: #f5f5f5;
   --soft-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
