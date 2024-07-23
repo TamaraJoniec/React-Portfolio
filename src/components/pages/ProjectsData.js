@@ -31,7 +31,7 @@ const projectsData = [
       id: "5",
       title: "Visit Leeds",
       imageUrl: "https://github.com/TamaraJoniec/JumpLinks/raw/main/src/demo.gif",
-      deployedUrl: "https://github.com/TamaraJoniec/JumpLinks",
+      deployedUrl: "https://jump-links.vercel.app/",
       githubUrl: "https://github.com/TamaraJoniec/JumpLinks/tree/main",
     },
   ];
