@@ -17,7 +17,6 @@ function ProjectGallery(props) {
 
   return (
     <section aria-labelledby="gallery-title">
-      <Container id="project-gallery" className="project-gallery-container">
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
             <h2 id="gallery-title" className="gallery-title">
@@ -133,7 +132,6 @@ function ProjectGallery(props) {
             <p>No projects to display.</p>
           )}
         </Row>
-      </Container>
     </section>
   );
 }
