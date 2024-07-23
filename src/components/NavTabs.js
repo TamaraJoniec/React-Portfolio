@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -7,6 +7,11 @@ function NavTabs() {
   const [navOpen, setNavOpen] = useState(false);
   const menuRef = useRef();
   const toggleButtonRef = useRef();
+  const location = useLocation();
+
+  useEffect(() => {
+    setNavOpen(false);
+  }, [location]); 
 
   useEffect(() => {
     if (window.location.pathname === "/React-Portfolio/#about") {
@@ -22,14 +27,6 @@ function NavTabs() {
       };
     }
   }, []);
-
-  useEffect(() => {
-    if (navOpen) {
-      menuRef.current?.focus();
-    } else {
-      toggleButtonRef.current?.focus();
-    }
-  }, [navOpen]);
 
   return (
     <nav className="navbar">
