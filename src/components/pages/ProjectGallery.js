@@ -17,6 +17,7 @@ function ProjectGallery(props) {
 
   return (
     <section aria-labelledby="gallery-title">
+      <Container id="project-gallery" className="project-gallery-container">
         <Row className="justify-content-center">
           <Col md={8} className="text-center">
             <h2 id="gallery-title" className="gallery-title">
@@ -24,69 +25,75 @@ function ProjectGallery(props) {
             </h2>
           </Col>
           <Row xs={1} sm={1} md={2} lg={3} className="g-4">
-            <article className="card h-100 mt-4">
-              <img
-                src={edenProjectImage}
-                className="card-img-top"
-                alt="Eden Project Booking Engine"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Eden Project Booking Engine</h3>
-                <div className="btn-container">
-                  <a
-                    href="https://www.edenproject.com/visit/book-tickets"
-                    className="btn btn-visit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Eden Project (opens in new window)"
-                  >
-                    Visit Site
-                  </a>
+            <Col>
+              <article className="card h-100 mt-4">
+                <img
+                  src={edenProjectImage}
+                  className="card-img-top"
+                  alt="Eden Project Booking Engine"
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Eden Project Booking Engine</h3>
+                  <div className="btn-container">
+                    <a
+                      href="https://www.edenproject.com/visit/book-tickets"
+                      className="btn btn-visit"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Visit Eden Project (opens in new window)"
+                    >
+                      Visit Site
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <article className="card h-100 mt-4">
-              <img
-                src={chathamHouseImage}
-                className="card-img-top"
-                alt="Chatham House sliders"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Chatham House | Sliders</h3>
-                <div className="btn-container">
-                  <a
-                    href="https://www.chathamhouse.org/"
-                    className="btn btn-visit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Chatham House (opens in new window)"
-                  >
-                    Visit Site
-                  </a>
+              </article>
+            </Col>
+            <Col>
+              <article className="card h-100 mt-4">
+                <img
+                  src={chathamHouseImage}
+                  className="card-img-top"
+                  alt="Chatham House sliders"
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Chatham House | Sliders</h3>
+                  <div className="btn-container">
+                    <a
+                      href="https://www.chathamhouse.org/"
+                      className="btn btn-visit"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Visit Chatham House (opens in new window)"
+                    >
+                      Visit Site
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
-            <article className="card h-100 mt-4">
-              <img
-                src={jrfImage}
-                className="card-img-top"
-                alt="Joseph Rowntree Foundation"
-              />
-              <div className="card-body">
-                <h3 className="card-title">Joseph Rowntree Foundation</h3>
-                <div className="btn-container">
-                  <a
-                    href="https://www.jrf.org.uk/"
-                    className="btn btn-visit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Joseph Rowntree Foundation (opens in new window)"
-                  >
-                    Visit Site
-                  </a>
+              </article>
+            </Col>
+            <Col>
+              <article className="card h-100 mt-4">
+                <img
+                  src={jrfImage}
+                  className="card-img-top"
+                  alt="Joseph Rowntree Foundation"
+                />
+                <div className="card-body">
+                  <h3 className="card-title">JRF</h3>
+                  <div className="btn-container">
+                    <a
+                      href="https://www.jrf.org.uk/"
+                      className="btn btn-visit"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Visit Joseph Rowntree Foundation (opens in new window)"
+                    >
+                      Visit Site
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Col>
           </Row>
         </Row>
         <h2 id="gallery-title" className="gallery-title">
@@ -119,7 +126,8 @@ function ProjectGallery(props) {
                           href={project.githubUrl}
                           className="btn btn-github"
                           target="_blank"
-                          rel="noopener noreferrer">
+                          rel="noopener noreferrer"
+                        >
                           GitHub
                         </a>
                       )}
@@ -132,6 +140,7 @@ function ProjectGallery(props) {
             <p>No projects to display.</p>
           )}
         </Row>
+      </Container>
     </section>
   );
 }
