@@ -25,8 +25,7 @@ function ProjectGallery(props) {
                   <img
                     src={project.imageUrl}
                     className="card-img-top"
-                    alt={project.title}
-                  />
+                    alt={project.title} />
                   <div className="card-body">
                     <h3 className="card-title">{project.title}</h3>
                     <div className="btn-container">
@@ -35,8 +34,7 @@ function ProjectGallery(props) {
                         className="btn btn-visit"
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`Visit ${project.title} (opens in new window)`}
-                      >
+                        aria-label={`Visit ${project.title} (opens in new window)`}>
                         Visit Site
                       </a>
                       {project.githubUrl && (
@@ -44,8 +42,7 @@ function ProjectGallery(props) {
                           href={project.githubUrl}
                           className="btn btn-github"
                           target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                          rel="noopener noreferrer">
                           GitHub
                         </a>
                       )}

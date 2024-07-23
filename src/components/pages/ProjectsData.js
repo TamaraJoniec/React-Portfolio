@@ -9,7 +9,7 @@ const projectsData = [
     {
       id: "2",
       title: "Marketing agency",
-      imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/raw/main/assets/images/Screenshot.png",
+      imageUrl: "https://github.com/TamaraJoniec/Code-Refactor/raw/main/assets/images/screenrecording.gif",
       deployedUrl: "https://tamarajoniec.github.io/Code-Refactor/",
       githubUrl: "https://github.com/TamaraJoniec/Code-Refactor",
     },
@@ -26,6 +26,13 @@ const projectsData = [
       imageUrl: "https://github.com/TamaraJoniec/Password-Generator/raw/main/assets/images/Screenshot.png",
       deployedUrl: "https://tamarajoniec.github.io/Password-Generator/",
       githubUrl: "https://github.com/TamaraJoniec/Password-Generator/tree/main",
+    },
+    {
+      id: "5",
+      title: "Visit Leeds",
+      imageUrl: "https://github.com/TamaraJoniec/JumpLinks/raw/main/src/demo.gif",
+      deployedUrl: "https://github.com/TamaraJoniec/JumpLinks",
+      githubUrl: "https://github.com/TamaraJoniec/JumpLinks/tree/main",
     },
   ];
   

@@ -23,11 +23,9 @@ function Home() {
               I'm a web developer based in the U.K.
             </h2>
             <div className="d-flex justify-content-center nav">
-              {/* Link to the project gallery */}
               <Link
                 to="/project-gallery/"
-                aria-label="View my project portfolio"
-              >
+                aria-label="View my project portfolio">
                 <Button className="btn btn-lg btn-secondary mx-2">
                   View Portfolio
                 </Button>
@@ -35,8 +33,7 @@ function Home() {
               <Link to="/contact/" aria-label="Contact me">
                 <Button
                   className="btn btn-lg btn-outline-light mx-2"
-                  variant="outline-light"
-                >
+                  variant="outline-light">
                   Contact Me
                 </Button>
               </Link>
@@ -65,7 +62,6 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      {/* Projects section */}
       <ProjectGallery projects={projectsData} />
     </div>
   );
