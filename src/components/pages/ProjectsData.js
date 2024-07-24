@@ -4,8 +4,8 @@ const projectsData = [
     title: "Weather App",
     imageUrl:
       "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard/raw/main/assets/images/Screenshot.png",
-    deployedUrl: "https://www.meeow.com/",
-    githubUrl: "https://github.com/TamaraJoniec/Meeow",
+    deployedUrl: "https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/",
+    githubUrl: "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard",
   },
   {
     id: "1",
@@ -28,8 +28,8 @@ const projectsData = [
     title: "Furniture store",
     imageUrl:
       "https://github.com/TamaraJoniec/Furniture-Website/raw/main/images/Screenshot.png",
-    deployedUrl: "https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/",
-    githubUrl: "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard",
+    deployedUrl: "https://tamarajoniec.github.io/Furniture-Website/",
+    githubUrl: "https://github.com/TamaraJoniec/Furniture-Website",
   },
   {
     id: "4",
