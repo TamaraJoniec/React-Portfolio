@@ -1,12 +1,12 @@
 const projectsData = [
-  // {
-  //   id: "0",
-  //   title: "Weather App",
-  //   imageUrl:
-  //     "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard/raw/main/assets/images/Screenshot.png",
-  //   deployedUrl: "https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/",
-  //   githubUrl: "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard",
-  // },
+  {
+    id: "0",
+    title: "Weather App",
+    imageUrl:
+      "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard/raw/main/assets/images/Screenshot.png",
+    deployedUrl: "https://tamarajoniec.github.io/Server-APIs-Weather-Dashboard/",
+    githubUrl: "https://github.com/TamaraJoniec/Server-APIs-Weather-Dashboard",
+  },
   {
     id: "1",
     title: "Meeow",
