@@ -48,6 +48,13 @@ const projectsData = [
     deployedUrl: "https://tranquil-gecko-2f76e4.netlify.app/",
     githubUrl: "https://github.com/TamaraJoniec/github-user-finder.git",
   },
+  {
+    id: "7",
+    title: "Notes App",
+    imageUrl: "https://github.com/TamaraJoniec/notes-app/blob/e95fdef9cbb9526f162066d3382d8760d4a373da/src/assets/Screenshot.png?raw=true",
+    deployedUrl: "https://luminous-boba-897c63.netlify.app/",
+    githubUrl: "https://github.com/TamaraJoniec/notes-app",
+  },
 ];
 
 export default projectsData;
