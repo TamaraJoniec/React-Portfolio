@@ -55,6 +55,13 @@ const projectsData = [
     deployedUrl: "https://luminous-boba-897c63.netlify.app/",
     githubUrl: "https://github.com/TamaraJoniec/notes-app",
   },
+  {
+    id: "8",
+    title: "Tech and Beyond Blog",
+    imageUrl: "https://github.com/TamaraJoniec/tech-and-beyond/raw/main/public/demo.png",
+    deployedUrl: "https://techbeyond.netlify.app/",
+    githubUrl: "https://github.com/TamaraJoniec/tech-and-beyond",
+  },
 ];
 
 export default projectsData;
