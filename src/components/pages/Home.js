@@ -17,7 +17,7 @@ function Home() {
         <Row className="justify-content-center align-items-center">
           <Col md={6}>
             <h1 className="intro text-center text-light mb-4">Hi, I'm Tamara</h1>
-            <h2 className=" text-center text-light mb-5">I'm a digital production coordinator and web developer based in the U.K.</h2>
+            <h2 className=" text-center text-light mb-5">I'm and web developer based in the U.K.</h2>
             <div className="d-flex justify-content-center nav">
               <Link to="/project-gallery/" aria-label="View my project portfolio">
                 <Button className="btn btn-lg btn-secondary mx-2">View Portfolio</Button>

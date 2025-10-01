@@ -10,6 +10,7 @@ import SironaAppointmentsImage from "./images/sirona-appointments.png";
 import HerefordshireImage from "./images/herefordshire-council.png";
 import BarkingRiversideImage from "./images/brl.png";
 import NorthMidlandsImage from "./images/uhnm.png";
+import HighSchoolDundeeImage from "./images/hsd.png";
 
 import "aos/dist/aos.css";
 
@@ -109,17 +110,17 @@ function ProjectGallery(props) {
             </Col>
             <Col>
               <article className="card h-100 mt-4">
-                <img src={BarkingRiversideImage} className="card-img-top" alt="Barking Riverside Ltd. website" />
+                <img src={HighSchoolDundeeImage} className="card-img-top" alt="Barking Riverside Ltd. website" />
                 <div className="card-body">
-                  <h3 className="card-title">Barking Riverside Ltd.</h3>
+                  <h3 className="card-title">The High School of Dundee</h3>
                   <div className="btn-container">
                     <a
-                      href="https://join-brl.co.uk/"
-                      //DEV LINK href="https://landq.gs-microsites.net/"
+                      href="https://hsdrector.co.uk/"
+                      //DEV LINK href="https://high-school-of-dundee.gs-microsites.net/"
                       className="btn btn-visit"
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label="Visit Barking Riverside Ltd.'s recruitment website (opens in new window)">
+                      aria-label="Visit the High School of Dundee's recruitment website (opens in new window)">
                       Visit Site
                     </a>
                   </div>
