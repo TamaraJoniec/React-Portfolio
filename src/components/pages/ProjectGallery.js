@@ -8,7 +8,6 @@ import SandwellCouncilImage from "./images/sandwell-council.png";
 import EssexCouncilImage from "./images/essex-leaders.png";
 import SironaAppointmentsImage from "./images/sirona-appointments.png";
 import HerefordshireImage from "./images/herefordshire-council.png";
-import BarkingRiversideImage from "./images/brl.png";
 import NorthMidlandsImage from "./images/uhnm.png";
 import HighSchoolDundeeImage from "./images/hsd.png";
 
