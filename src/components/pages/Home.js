@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 function Home() {
   useEffect(() => {
     document.title = "Home - Tamara's Portfolio";
-        document.body.classList.add("project-gallery-bg");
+    document.body.classList.add("project-gallery-bg");
     return () => {
       document.body.classList.remove("project-gallery-bg");
     };
@@ -23,9 +23,6 @@ function Home() {
             <h1 className="intro text-center text-light mb-4">Hi, I'm Tamara</h1>
             <h2 className=" text-center text-light mb-5">I'm a graphic designer and web developer based in the U.K.</h2>
             <div className="d-flex justify-content-center nav">
-              <Link to="/project-gallery/" aria-label="View my project portfolio">
-                <Button className="btn btn-lg btn-secondary mx-2">View Portfolio</Button>
-              </Link>
               <Link to="/contact/" aria-label="Contact me">
                 <Button className="btn btn-lg btn-outline-light mx-2" variant="outline-light">
                   Contact Me
@@ -50,12 +47,11 @@ function Home() {
             <i className="bi bi-brush display-1 mb-4" aria-hidden="true"></i>
             <h4 className="subHeading">Graphic Design</h4>
             <p className="lead">
-              I create visually stunning designs that effectively communicate your brand's message with marketing materials and social media graphics. View my{" "}
-              <Link to="/linkedin-mj-ads/" aria-label="View my LinkedIn and MJ ads portfolio" className="text-white">
-                LinkedIn ad and MJ print designs
-              </Link>
-              .
+              I create visually stunning designs that effectively communicate your brand's message with marketing materials and social media graphics.
             </p>
+            <Link to="/linkedin-mj-ads/" aria-label="View my project portfolio">
+              <Button className="btn btn-lg btn-secondary mx-2">View latest designs for LinkedIn and MJ magazine</Button>
+            </Link>
           </Col>
           <Col md={8} className="text-center">
             <i className="bi bi-laptop display-1 mb-4" aria-hidden="true"></i>
@@ -64,6 +60,9 @@ function Home() {
               I build responsive and fast-loading websites using modern web technologies like HTML/CSS3, JavaScript, React, Vue, Tailwind and CMRs like
               Wordpress and Drupal.
             </p>
+            <Link to="/project-gallery/" aria-label="View my project portfolio">
+              <Button className="btn btn-lg btn-secondary mx-2">View Websites Portfolio</Button>
+            </Link>
           </Col>
         </Row>
       </Container>
