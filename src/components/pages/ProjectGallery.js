@@ -1,5 +1,5 @@
 // Import required modules
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import edenProjectImage from "./images/eden-project.jpg";
 import chathamHouseImage from "./images/chatham-house.png";

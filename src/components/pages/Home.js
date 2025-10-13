@@ -9,6 +9,10 @@ import "aos/dist/aos.css";
 function Home() {
   useEffect(() => {
     document.title = "Home - Tamara's Portfolio";
+        document.body.classList.add("project-gallery-bg");
+    return () => {
+      document.body.classList.remove("project-gallery-bg");
+    };
   }, []);
 
   return (
@@ -42,9 +46,20 @@ function Home() {
           </Col>
         </Row>
         <Row className="justify-content-center">
+          <Col md={8} className="text-center mb-5">
+            <i className="bi bi-brush display-1 mb-4" aria-hidden="true"></i>
+            <h4 className="subHeading">Graphic Design</h4>
+            <p className="lead">
+              I create visually stunning designs that effectively communicate your brand's message with marketing materials and social media graphics. View my{" "}
+              <Link to="/linkedin-mj-ads/" aria-label="View my LinkedIn and MJ ads portfolio" className="text-white">
+                LinkedIn ad and MJ print designs
+              </Link>
+              .
+            </p>
+          </Col>
           <Col md={8} className="text-center">
             <i className="bi bi-laptop display-1 mb-4" aria-hidden="true"></i>
-            <h4 className="subHeading">Web Development</h4>
+            <h4 className="subHeading">Web Design and Development</h4>
             <p className="lead">
               I build responsive and fast-loading websites using modern web technologies like HTML/CSS3, JavaScript, React, Vue, Tailwind and CMRs like
               Wordpress and Drupal.

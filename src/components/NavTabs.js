@@ -41,6 +41,9 @@ function NavTabs() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/linkedin-mj-ads/">Graphic Design Portfolio</Link>
+          </li>
+          <li>
             <Link to="/project-gallery/">Websites Portfolio</Link>
           </li>
           <li>

@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import ProjectGallery from './components/pages/ProjectGallery';
 import Contact from './components/pages/Contact';
 import projectsData from "./components/pages/ProjectsData";
+import LinkedInMJAds from './components/pages/LinkedInMJAds';
 import './styles.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <NavTabs />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/linkedin-mj-ads/" element={<LinkedInMJAds />} />
           <Route path="/project-gallery/" element={<ProjectGallery projects={projectsData} />} />
           <Route path="/contact/" element={<Contact />} />
         </Routes>
